@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Alekssey Orekhovv](https://up.htmlacademy.ru/htmlcss/23/user/214838).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Батманов](https://htmlacademy.ru/profile/id10964).
 
 ---
 
