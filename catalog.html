@@ -82,36 +82,40 @@
                 <ul class="catalog__list">
                     <!-- TODO: https://github.com/htmlacademy-htmlcss/214838-technomart/pull/2#discussion_r234885595 -->
                     <!-- По БЕМу выходит, что это самостоятельный блок -->
-                    <li class="goods-item">
-                        <div class="goods-item__image">
-                            <img src="bosch-bfg-9000.jpg" alt="Перфоратор Bosch BFG 9000" />
-                        </div>
-                        <div class="goods-item__actions">
-                            <button class="goods-item__submit">Купить</button>
-                            <button class="goods-item__bookmark">В закладки</button>
-                        </div>
-                        <a class="goods-item__link" href="#">
-                            Перфоратор Bosch BFG 9000<br/>
-                            BFG 9000
-                        </a>
-                        <p class="goods-item__old-price">22500</p>
-                        <p class="goods-item__new-price">15500</p>
+                    <li class="catalog__item">
+                        <section class="goods-card">
+                            <div class="goods-card__image">
+                                <img src="bosch-bfg-9000.jpg" alt="Перфоратор Bosch BFG 9000" />
+                            </div>
+                            <div class="goods-card__actions">
+                                <button class="goods-card__submit">Купить</button>
+                                <button class="goods-card__bookmark">В закладки</button>
+                            </div>
+                            <a class="goods-card__link" href="#">
+                                Перфоратор Bosch BFG 9000<br/>
+                                BFG 9000
+                            </a>
+                            <p class="goods-card__old-price">22500</p>
+                            <p class="goods-card__new-price">15500</p>
+                        </section>
                     </li>
-                    <li class="goods-item goods-item--new">
-                        <div class="goods-item__image">
-                            <img src="bosch-bfg-3000.jpg" alt="Перфоратор Bosch BFG 3000" />
-                        </div>
-                        <div class="goods-item__actions">
-                            <button class="goods-item__submit">Купить</button>
-                            <button class="goods-item__bookmark">В закладки</button>
-                        </div>
-                        <a class="goods-item__link" href="#">
-                            Перфоратор Bosch BFG 3000<br/>
-                            BFG 3000
-                        </a>
-                        <p class="goods-item__old-price">22500</p>
-                        <p class="goods-item__new-price">15500</p>
-                    </li>
+                    <li class="catalog__item catalog__item--new">
+                        <section class="goods-card">
+                            <div class="goods-card__image">
+                                <img src="bosch-bfg-3000.jpg" alt="Перфоратор Bosch BFG 3000" />
+                            </div>
+                            <div class="goods-card__actions">
+                                <button class="goods-card__submit">Купить</button>
+                                <button class="goods-card__bookmark">В закладки</button>
+                            </div>
+                            <a class="goods-card__link" href="#">
+                                Перфоратор Bosch BFG 3000<br/>
+                                BFG 3000
+                            </a>
+                            <p class="goods-card__old-price">22500</p>
+                            <p class="goods-card__new-price">15500</p>
+
+                        </section>                    </li>
                     <!-- TODO: добавить остальные элементы после проверки -->
                 </ul>
                 <ul class="pagination">
@@ -122,10 +126,10 @@
             </section>
             <!-- TODO: https://github.com/htmlacademy-htmlcss/214838-technomart/pull/2#discussion_r234886124 -->
             <!-- Думаешь не тянет на заголовок? -->
-            <section class="about-goods-group">
-                <h2 class="visually-hidden">О товарах раздела</h2>
-                <b class="about-goods-group__title">Пара слов о перфораторах</b>
-                <p class="about-goods-group__text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+            <section class="group-descr">
+                <h2 class="visually-hidden">Описание раздела Перфораторы</h2>
+                <b class="group-descr__title">Пара слов о перфораторах</b>
+                <p class="group-descr__text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
             </section>
         </main>
         <footer class="main-footer">
@@ -139,17 +143,17 @@
             <!-- TODO: https://github.com/htmlacademy-htmlcss/214838-technomart/pull/2#discussion_r234886606 -->
             <!-- Не совсем корректное название элемента -->
             <ul class="main-footer-nav__list">
-                <li class="main-footer-nav__link"><a href="#">Компания</a></li>
-                <li class="main-footer-nav__link"><a href="#">Новости</a></li>
-                <li class="main-footer-nav__link"><a href="#">Каталог</a></li>
-                <li class="main-footer-nav__link"><a href="#">Доставка</a></li>
-                <li class="main-footer-nav__link"><a href="#">Контакты</a></li>
+                <li class="main-footer-nav__item"><a href="#">Компания</a></li>
+                <li class="main-footer-nav__item"><a href="#">Новости</a></li>
+                <li class="main-footer-nav__item"><a href="#">Каталог</a></li>
+                <li class="main-footer-nav__item"><a href="#">Доставка</a></li>
+                <li class="main-footer-nav__item"><a href="#">Контакты</a></li>
             </ul>
             <ul class="main-footer-groups-nav__list">
-                <li class="main-footer-groups-nav__link"><a href="#">Материалы</a></li>
-                <li class="main-footer-groups-nav__link"><a href="#">Техника</a></li>
-                <li class="main-footer-groups-nav__link"><a href="#">Инструмент</a></li>
-                <li class="main-footer-groups-nav__link"><a href="#">Спецпредложения</a></li>
+                <li class="main-footer-groups-nav__item"><a href="#">Материалы</a></li>
+                <li class="main-footer-groups-nav__item"><a href="#">Техника</a></li>
+                <li class="main-footer-groups-nav__item"><a href="#">Инструмент</a></li>
+                <li class="main-footer-groups-nav__item"><a href="#">Спецпредложения</a></li>
             </ul>
             <p class="owner-copyright">
                 © 2010–2017 Компания «Техномарт»<br/> Все права защищены
