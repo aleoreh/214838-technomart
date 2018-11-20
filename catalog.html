@@ -18,7 +18,7 @@
             </div>
             <p class="main-header__title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
             <p class="main-header__contacts">
-                <span class="main-header__phone">+7(812)5550555</span>
+                <a class="main-header__phone" href="tel:+7(812)5550555">+7(812)5550555</a>
                 <span class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </p>
             <ul class="account-actions account-actions--logged-in">
@@ -31,9 +31,9 @@
             </ul>
             <nav class="main-nav">
                 <ul class="main-nav__list">
-                    <li class="main-nav__item main-nav__item--current">Главная</li>
+                    <li class="main-nav__item"><a href="index.html">Главная</a></li>
                     <li class="main-nav__item"><a href="#">Компания</a></li>
-                    <li class="main-nav__item"><a href="#">Каталог</a></li>
+                    <li class="main-nav__item main-nav__item--current">Каталог</li>
                     <li class="main-nav__item"><a href="#">Новости</a></li>
                     <li class="main-nav__item"><a href="#">Спецпредложения</a></li>
                     <li class="main-nav__item"><a href="#">Доставка</a></li>
@@ -41,14 +41,12 @@
                 </ul>
             </nav>
         </header>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
+            <li class="breadcrumbs__item"><a href="#">Инструмент</a></li>
+            <li class="breadcrumbs__item breadcrumbs__item--current">Перфораторы</li>
+        </ul>
         <main class="main">
-            <nav class="main__breadcrumbs breadcrumbs">
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
-                    <li class="breadcrumbs__item"><a href="#">Инструмент</a></li>
-                    <li class="breadcrumbs__item breadcrumbs__item--current">Перфораторы</li>
-                </ul>
-            </nav>
             <h1 class="main__title">Перфораторы</h1>
             <section class="main-filter">
                 <h2 class="visually-hidden">Основной фильтр</h2>
@@ -79,9 +77,11 @@
                     <span>[Сортировка]</span>
                 </div>
             </section>
-            <section class="main__catalog catalog">
+            <section class="catalog">
                 <h2 class="visually-hidden">Каталог</h2>
                 <ul class="catalog__list">
+                    <!-- TODO: https://github.com/htmlacademy-htmlcss/214838-technomart/pull/2#discussion_r234885595 -->
+                    <!-- По БЕМу выходит, что это самостоятельный блок -->
                     <li class="goods-item">
                         <div class="goods-item__image">
                             <img src="bosch-bfg-9000.jpg" alt="Перфоратор Bosch BFG 9000" />
@@ -91,11 +91,11 @@
                             <button class="goods-item__bookmark">В закладки</button>
                         </div>
                         <a class="goods-item__link" href="#">
-                            <span class="goods-item__name">Перфоратор Bosch BFG 9000</span>
-                            <span class="goods-item__name">BFG 9000</span>
+                            Перфоратор Bosch BFG 9000<br/>
+                            BFG 9000
                         </a>
-                        <div class="goods-item__old-price">22500</div>
-                        <div class="goods-item__new-price">15500</div>
+                        <p class="goods-item__old-price">22500</p>
+                        <p class="goods-item__new-price">15500</p>
                     </li>
                     <li class="goods-item goods-item--new">
                         <div class="goods-item__image">
@@ -106,11 +106,11 @@
                             <button class="goods-item__bookmark">В закладки</button>
                         </div>
                         <a class="goods-item__link" href="#">
-                            <span class="goods-item__name">Перфоратор Bosch BFG 3000</span>
-                            <span class="goods-item__name">BFG 3000</span>
+                            Перфоратор Bosch BFG 3000<br/>
+                            BFG 3000
                         </a>
-                        <div class="goods-item__old-price">22500</div>
-                        <div class="goods-item__new-price">15500</div>
+                        <p class="goods-item__old-price">22500</p>
+                        <p class="goods-item__new-price">15500</p>
                     </li>
                     <!-- TODO: добавить остальные элементы после проверки -->
                 </ul>
@@ -120,6 +120,8 @@
                     <li class="pagination__item"><a href="#">3</a></li>
                 </ul>
             </section>
+            <!-- TODO: https://github.com/htmlacademy-htmlcss/214838-technomart/pull/2#discussion_r234886124 -->
+            <!-- Думаешь не тянет на заголовок? -->
             <section class="about-goods-group">
                 <h2 class="visually-hidden">О товарах раздела</h2>
                 <b class="about-goods-group__title">Пара слов о перфораторах</b>
@@ -130,25 +132,25 @@
             <a class="main-footer__logo logo"><img src="img/logo.jpg" alt="Логотип Техномарт"/></a>
             <p class="main-footer__contacts">
                 <span class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                <span class="main-footer__phone">+7(812)5550555</span>
+                <a class="main-footer__phone" href="tel:+7(812)5550555">+7(812)5550555</a>
             </p>
-            <nav class="main-footer-nav">
-                <ul class="main-footer-nav__list">
-                    <li class="main-footer-nav__link"><a href=slider__list"#">Компания</a></li>
-                    <li class="main-footer-nav__link"><a href="#">Новости</a></li>
-                    <li class="main-footer-nav__link"><a href="#">Каталог</a></li>
-                    <li class="main-footer-nav__link"><a href="#">Доставка</a></li>
-                    <li class="main-footer-nav__link"><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <nav class="main-footer-groups-nav">
-                <ul class="main-footer-groups-nav__list">
-                    <li class="main-footer-groups-nav__link"><a href="#">Материалы</a></li>
-                    <li class="main-footer-groups-nav__link"><a href="#">Техника</a></li>
-                    <li class="main-footer-groups-nav__link"><a href="#">Инструмент</a></li>
-                    <li class="main-footer-groups-nav__link"><a href="#">Спецпредложения</a></li>
-                </ul>
-            </nav>
+            <!-- TODO: https://github.com/htmlacademy-htmlcss/214838-technomart/pull/2#discussion_r234886547 -->
+            <!-- Все же это не ссылка, а пункт -->
+            <!-- TODO: https://github.com/htmlacademy-htmlcss/214838-technomart/pull/2#discussion_r234886606 -->
+            <!-- Не совсем корректное название элемента -->
+            <ul class="main-footer-nav__list">
+                <li class="main-footer-nav__link"><a href="#">Компания</a></li>
+                <li class="main-footer-nav__link"><a href="#">Новости</a></li>
+                <li class="main-footer-nav__link"><a href="#">Каталог</a></li>
+                <li class="main-footer-nav__link"><a href="#">Доставка</a></li>
+                <li class="main-footer-nav__link"><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="main-footer-groups-nav__list">
+                <li class="main-footer-groups-nav__link"><a href="#">Материалы</a></li>
+                <li class="main-footer-groups-nav__link"><a href="#">Техника</a></li>
+                <li class="main-footer-groups-nav__link"><a href="#">Инструмент</a></li>
+                <li class="main-footer-groups-nav__link"><a href="#">Спецпредложения</a></li>
+            </ul>
             <p class="owner-copyright">
                 © 2010–2017 Компания «Техномарт»<br/> Все права защищены
             </p>
