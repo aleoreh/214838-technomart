@@ -12,8 +12,8 @@
             <a class="main-header__logo logo"><img src="img/logo.jpg" alt="Логотип Техномарт"/></a>
             <div class="main-header__top-actions">
                 <form class="main-header__search" method="POST" action"="http://example.com/search">
-                    <button type="submit" class="main-header__search-submit visually-hidden"></button>
-                    <input type="text" class="main-header__search-input"/>
+                    <input type="text" class="main-header__search-input" aria-label="Ввод текста для поиска"/>
+                    <button type="submit" class="main-header__search-submit"><span>Искать</span></button>
                 </form>
                 <a href="bookmarks" class="main-header__bookmarks-link">
                     Закладки:
@@ -29,11 +29,11 @@
             </div>
             <p class="main-header__title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
             <p class="main-header__contacts">
-                <a class="main-header__phone" href="tel:+7(812)5550555">+7(812)5550555</a>
+                <a class="main-header__phone" href="tel:+7(812)5550555" aria-label="Позвонить">+7(812)5550555</a>
                 <span class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </p>
             <ul class="account-actions account-actions--logged-out">
-                <li class="account-actions__login"><a href="login">Войти</a></li>
+                <li class="account-actions__login"><a href="login" aria-label="Войти в систему">Войти</a></li>
                 <li class="account-actions__register"><a href="register">Регистрация</a></li>
             </ul>
             <nav class="main-nav">
@@ -68,14 +68,14 @@
                 <div class="contacts__map google-map">
                     <img src="img/map.jpg" alt="Карта" width="300" height="158" /> Карта
                 </div>
-                <a class="contacts__feedback-link" href="#">Заблудились? Напишите нам!</a>
+                <a class="contacts__feedback-link" href="#" aria-label="Открыть форму обратной связи">Заблудились? Напишите нам!</a>
             </section>
         </main>
         <footer class="main-footer">
             <a class="main-footer__logo logo"><img src="img/logo.jpg" alt="Логотип Техномарт"/></a>
             <p class="main-footer__contacts">
                 <span class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                <a class="main-footer__phone" href="tel:+7(812)5550555">+7(812)5550555</a>
+                <a class="main-footer__phone" href="tel:+7(812)5550555" aria-label="Позвонить">+7(812)5550555</a>
             </p>
             <ul class="main-footer-nav__list">
                 <li class="main-footer-nav__item"><a href="#">Компания</a></li>
@@ -94,13 +94,13 @@
                 © 2010–2017 Компания «Техномарт»<br/> Все права защищены
             </p>
             <ul class="social">
-                <li class="social__icon social__icon--vkontakte"><a href="#">VKontakte</a></li>
-                <li class="social__icon social__icon--facebook"><a href="#">Facebook</a></li>
-                <li class="social__icon social__icon--instagram"><a href="#">Instagram</a></li>
+                <li class="social__icon social__icon--vkontakte"><a href="#">Мы во ВКонтакте</a></li>
+                <li class="social__icon social__icon--facebook"><a href="#">Мы в Facebook</a></li>
+                <li class="social__icon social__icon--instagram"><a href="#">Мы в Instagram</a></li>
             </ul>
             <div class="feedback">
                 <span class="feedback__text">Обратная связь</span>
-                <a class="feedback__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a class="feedback__link" href="mailto:mail@htmlacademy.ru" aria-label="Написать письмо">mail@htmlacademy.ru</a>
             </div>
             <div class="dev-copyright">
                 <span class="dev-copyright__text">Разработано</span>
