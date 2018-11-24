@@ -11,19 +11,19 @@
         <header class="main-header">
             <a class="main-header__logo logo"><img src="img/logo.jpg" alt="Логотип Техномарт"/></a>
             <div class="main-header__top-actions">
-                <form class="search">
-                    <input type="text" class="search__input"/>
-                    <button type="submit" class="search__submit"></button>
+                <form class="main-header__search" method="POST" action"="http://example.com/search">
+                    <button type="submit" class="main-header__search-submit visually-hidden"></button>
+                    <input type="text" class="main-header__search-input"/>
                 </form>
-                <a href="bookmarks" class="bookmarks-link">
+                <a href="bookmarks" class="main-header__bookmarks-link">
                     Закладки:
-                    <span class="bookmarks-link__count">0</span>
+                    <span class="main-header__action-info">0</span>
                 </a>
-                <a href="cart" class="cart-link">
+                <a href="cart" class="main-header__cart-link">
                     Корзина:
-                    <span class="cart-link__count">0</span>
+                    <span class="main-header__action-info">0</span>
                 </a>
-                <a href="order" class="order-link">
+                <a href="main-header__make-order" class="order-link">
                     Оформить заказ
                 </a>
             </div>
@@ -60,7 +60,7 @@
                     <li class="about__delivery-item">Автотрейдинг</li>
                     <li class="about__delivery-item">ЖелДорЭкспедиция</li>
                 </ul>
-                <a href="#">Подробнее о компании</a>
+                <a class="about__details-link" href="#">Подробнее о компании</a>
             </section>
             <section class="contacts">
                 <h2 class="contacts__title">Контакты</h2>
@@ -68,7 +68,7 @@
                 <div class="contacts__map google-map">
                     <img src="img/map.jpg" alt="Карта" width="300" height="158" /> Карта
                 </div>
-                <p class="contacts__writetous">Заблудились? Напишите нам!</p>
+                <a class="contacts__feedback-link" href="#">Заблудились? Напишите нам!</a>
             </section>
         </main>
         <footer class="main-footer">
@@ -112,11 +112,11 @@
             <form class="modal-feedback__form">
                 <div class="modal-feedback__inputs">
                     <label for="feedback-name" class="modal-feedback__label">Ваше имя</label>
-                    <input id="feedback-name" name="name" type="text" class="modal-feedback__text"/>
-                    <label for="feedback-email" class="modal-feedback__label">Ваше имя</label>
-                    <input id="feedback-email" name="email" type="text" class="modal-feedback__text"/>
-                    <label for="feedback-text" class="modal-feedback__label">Ваше имя</label>
-                    <input id="feedback-text" name="text" type="text" class="modal-feedback__text"/>
+                    <input id="feedback-name" name="name" type="text" class="modal-feedback__text" placeholder="Имя Фамилия"/>
+                    <label for="feedback-email" class="modal-feedback__label">Ваш e-mail</label>
+                    <input id="feedback-email" name="email" type="text" class="modal-feedback__text" placeholder="email@example.com"/>
+                    <label for="feedback-text" class="modal-feedback__label">Текст письма</label>
+                    <textarea id="feedback-text" name="text" type="text" class="modal-feedback__text" placeholder="В свободной форме"></textarea>
                 </div>
                 <ul class="modal-feedback__actions">
                     <li class="modal-feedback__action">
@@ -130,7 +130,7 @@
         </section>
         <section class="modal modal-google-map">
             <h2 class="visually-hidden">Мы на карте</h2>
-            <img src="img/map-big.jpg" class="modal-google-map__img"/>
+            <img src="img/map-big.jpg" class="modal-google-map__img" width="940"/>
             <button type="button" class="modal-google-map__close">
                 <span class="visually-hidden">Закрыть окно карты</span>
             </button>
