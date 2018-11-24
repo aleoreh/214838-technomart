@@ -10,11 +10,22 @@
         <!-- Пространства имён пока оформим каскадом -->
         <header class="main-header">
             <a class="main-header__logo logo"><img src="img/logo.jpg" alt="Логотип Техномарт"/></a>
-            <div class="some-interactive-elements">
-                <span>Поиск</span>
-                <span>Закладки</span>
-                <span>Корзина</span>
-                <span>Оформить заказ</span>
+            <div class="main-header__top-actions">
+                <form class="search">
+                    <input type="text" class="search__input"/>
+                    <button type="submit" class="search__submit"></button>
+                </form>
+                <a href="bookmarks" class="bookmarks-link">
+                    Закладки:
+                    <span class="bookmarks-link__count">0</span>
+                </a>
+                <a href="cart" class="cart-link">
+                    Корзина:
+                    <span class="cart-link__count">0</span>
+                </a>
+                <a href="order" class="order-link">
+                    Оформить заказ
+                </a>
             </div>
             <p class="main-header__title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
             <p class="main-header__contacts">
@@ -96,13 +107,33 @@
                 <a class="dev-copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">https://htmlacademy.ru</a>
             </div>
         </footer>
-        <section class="modal modal-write-to-us">
+        <section class="modal modal-feedback">
             <h2 class="visually-hidden">Обратная связь</h2>
-            <!-- Форма обратной связи -->
+            <form class="modal-feedback__form">
+                <div class="modal-feedback__inputs">
+                    <label for="feedback-name" class="modal-feedback__label">Ваше имя</label>
+                    <input id="feedback-name" name="name" type="text" class="modal-feedback__text"/>
+                    <label for="feedback-email" class="modal-feedback__label">Ваше имя</label>
+                    <input id="feedback-email" name="email" type="text" class="modal-feedback__text"/>
+                    <label for="feedback-text" class="modal-feedback__label">Ваше имя</label>
+                    <input id="feedback-text" name="text" type="text" class="modal-feedback__text"/>
+                </div>
+                <ul class="modal-feedback__actions">
+                    <li class="modal-feedback__action">
+                        <button class="modal-feedback__button">Отправить</button>
+                    </li>
+                </ul>
+                <button type="button" class="modal-feedback__close">
+                    <span class="visually-hidden">Закрыть окно обратной связи</span>
+                </button>
+            </form>
         </section>
         <section class="modal modal-google-map">
             <h2 class="visually-hidden">Мы на карте</h2>
-            <!-- Карта местности -->
+            <img src="img/map-big.jpg" class="modal-google-map__img"/>
+            <button type="button" class="modal-google-map__close">
+                <span class="visually-hidden">Закрыть окно карты</span>
+            </button>
         </section>
     </body>
 
