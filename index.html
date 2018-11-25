@@ -11,9 +11,9 @@
         <header class="main-header">
             <a class="main-header__logo logo"><img src="img/logo.jpg" alt="Логотип Техномарт"/></a>
             <div class="main-header__top-actions">
-                <form class="main-header__search" method="POST" action"="http://example.com/search">
+                <form class="main-header__search" method="POST" action="http://example.com/search">
                     <input type="text" class="main-header__search-input" aria-label="Ввод текста для поиска"/>
-                    <button type="submit" class="main-header__search-submit"><span>Искать</span></button>
+                    <button type="submit" class="main-header__search-submit">Искать</button>
                 </form>
                 <a href="bookmarks" class="main-header__bookmarks-link">
                     Закладки:
@@ -109,31 +109,31 @@
         </footer>
         <section class="modal modal-feedback">
             <h2 class="visually-hidden">Обратная связь</h2>
+            <button type="button" class="modal-feedback__close">
+                <span class="visually-hidden">Закрыть окно обратной связи</span>
+            </button>
             <form class="modal-feedback__form">
                 <div class="modal-feedback__inputs">
                     <label for="feedback-name" class="modal-feedback__label">Ваше имя</label>
                     <input id="feedback-name" name="name" type="text" class="modal-feedback__text" placeholder="Имя Фамилия"/>
                     <label for="feedback-email" class="modal-feedback__label">Ваш e-mail</label>
-                    <input id="feedback-email" name="email" type="text" class="modal-feedback__text" placeholder="email@example.com"/>
+                    <input id="feedback-email" name="email" type="email" class="modal-feedback__text" placeholder="email@example.com"/>
                     <label for="feedback-text" class="modal-feedback__label">Текст письма</label>
-                    <textarea id="feedback-text" name="text" type="text" class="modal-feedback__text" placeholder="В свободной форме"></textarea>
+                    <textarea id="feedback-text" name="text" class="modal-feedback__text" placeholder="В свободной форме"></textarea>
                 </div>
                 <ul class="modal-feedback__actions">
                     <li class="modal-feedback__action">
-                        <button class="modal-feedback__button">Отправить</button>
+                        <button class="modal-feedback__button" type="button">Отправить</button>
                     </li>
                 </ul>
-                <button type="button" class="modal-feedback__close">
-                    <span class="visually-hidden">Закрыть окно обратной связи</span>
-                </button>
             </form>
         </section>
         <section class="modal modal-google-map">
             <h2 class="visually-hidden">Мы на карте</h2>
-            <img src="img/map-big.jpg" class="modal-google-map__img" width="940"/>
             <button type="button" class="modal-google-map__close">
                 <span class="visually-hidden">Закрыть окно карты</span>
             </button>
+            <img src="img/map-big.jpg" class="modal-google-map__img" alt="Схема проезда" width="940"/>
         </section>
     </body>
 

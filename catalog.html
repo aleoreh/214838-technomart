@@ -9,11 +9,13 @@
 
     <body>
         <header class="main-header">
-            <a class="main-header__logo logo" href="index.html" aria-label="На главную"><img src="img/logo.jpg" alt="Логотип Техномарт"/></a>
+            <a class="main-header__logo logo" href="index.html" aria-label="На главную">
+                <img src="img/logo.jpg" alt="Логотип Техномарт"/>
+            </a>
             <div class="main-header__top-actions">
-                <form class="main-header__search" method="POST" action"="http://example.com/search">
+                <form class="main-header__search" method="POST" action="http://example.com/search">
                     <input type="text" class="main-header__search-input" aria-label="Ввод текста для поиска"/>
-                    <button type="submit" class="main-header__search-submit"><span>Искать</span></button>
+                    <button type="submit" class="main-header__search-submit">Искать</button>
                 </form>
                 <a href="bookmarks" class="main-header__bookmarks-link main-header__bookmarks-link--full">
                     Закладки:
@@ -34,8 +36,8 @@
             </p>
             <ul class="account-actions account-actions--logged-in">
                 <li class="account-actions__logout">
-                    <span>Равшан Джамшутович</span>
-                    <a href="logout" aria-label="Выйти из системы">Выйти</a>
+                    <span class="account-actions__text">Равшан Джамшутович</span>
+                    <button class="account-actions__logout-button" type="button" aria-label="Выйти из системы">Выйти</button>
                 </li>
                 <li class="account-actions__personal"><a href="#">Мои заказы</a></li>
                 <li class="account-actions__personal"><a href="#">Личный кабинет</a></li>
@@ -70,16 +72,16 @@
                     <fieldset class="main-filter__section">
                         <legend class="main-filter__title">Производители</legend>
                         <ul class="main-filter__list">
-                            <li class="main-filter__item main-filter__item--selected">
-                                <input type="checkbox" class="visually-hidden main-filter__checkbox main-filter__checkbox--checked" id="filter-bosch" name="bosch" checked/>
+                            <li class="main-filter__item">
+                                <input type="checkbox" class="visually-hidden main-filter__checkbox main-filter__checkbox--checked" id="filter-bosch" name="bosch"/>
                                 <label for="filter-bosch">Bosch</label>
                             </li>
                             <li class="main-filter__item">
                                 <input type="checkbox" class="visually-hidden main-filter__checkbox" id="filter-interskol" name="interskol"/>
                                 <label for="filter-interskol">Интерскол</label>
                             </li>
-                            <li class="main-filter__item main-filter__item--selected">
-                                <input type="checkbox" class="visually-hidden main-filter__checkbox__checkbox--checked" id="filter-makita" name="makita" checked/>
+                            <li class="main-filter__item">
+                                <input type="checkbox" class="visually-hidden main-filter__checkbox__checkbox--checked" id="filter-makita" name="makita"/>
                                 <label for="filter-makita">Makita</label>
                             </li>
                             <li class="main-filter__item">
@@ -95,7 +97,7 @@
                     <fieldset class="main-filter__section">
                         <h3 class="main-filter__title">Питание</h3>
                         <ul class="main-filter__list">
-                            <li class="main-filter__item main-filter__item--selected">
+                            <li class="main-filter__item">
                                 <input type="radio" class="visually-hidden main-filter__radio" id="filter-accum" name="main-filter-radio"/>
                                 <label for="filter-accum">Аккумуляторные</label>
                             </li>
