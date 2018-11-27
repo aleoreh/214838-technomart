@@ -1,0 +1,170 @@
+/* source: https://allyjs.io/tutorials/hiding-elements.html */
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header__search-input {
+    color: #ffffff;
+    background-color: #293449;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.main-header__search-input:hover {
+    background-color: #212a3a;
+}
+
+.main-header__search-input:focus,
+.main-header__search-input:active {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.main-header__top-actions {
+    color: #ffffff;
+    background-color: #293449;
+}
+
+.main-header__top-actions:hover {
+    background-color: #212a3a;
+}
+
+.main-header__bookmarks-link,
+.main-header__cart-link,
+.order-link {
+    font-family: Cuprum;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.main-header__bookmarks-link:active,
+.main-header__cart-link:active,
+.order-link:active,
+.main-header__bookmarks-link:focus,
+.main-header__cart-link:focus,
+.order-link:focus {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #161d29;
+}
+
+.order-link {
+    color: #ffffff;
+    background-color: #63a63e;
+}
+
+.order-link:hover {
+    background-color: #5fbb2d;
+}
+
+.order-link:focus,
+.order-link:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #518534;
+}
+
+/* TODO: Как оформить .order-link при активном .main-header__search-input? */
+
+.main-header {
+    font-family: Cuprum;
+}
+
+.main-header__wr {
+    color: #000000;
+    background-color: #f3f7f8;
+}
+
+.main-header__title {
+    color: #ee3643;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 23px;
+}
+
+.main-header__phone {
+    color: #ee3643;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.main-header__address {
+    color: #32425c;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.account-actions {
+    list-style: none;
+}
+
+.account-actions__login,
+.account-actions__register {
+    height: 45px;
+    background-color: #ffffff;
+}
+.account-actions__login a,
+.account-actions__register a {
+    color: #000000;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.account-actions__login a:hover,
+.account-actions__register a:hover {
+    color: #ee3643;
+}
+
+.account-actions__login a:focus,
+.account-actions__register a:focus,
+.account-actions__login a:active,
+.account-actions__register a:active {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.main-nav {
+    color: #ffffff;
+
+    background-color: #2e405c;
+}
+
+.main-nav__list {
+    list-style: none;
+}
+
+.main-nav__item a {
+    color: #ffffff;
+}
+
+.main-nav__item:not(.main-nav__item--current) a:hover {
+    background-color: #293449;
+}
+
+.main-nav__item:not(.main-nav__item--current) a:active,
+.main-nav__item:not(.main-nav__item--current) a:focus {
+    background-color: #1d2739;
+    color: rgba(255, 255, 255, 0.5);
+}
