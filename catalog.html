@@ -14,47 +14,50 @@
             <a class="main-header__logo logo" href="index.html" aria-label="На главную">
                 <img src="img/logo.jpg" alt="Логотип Техномарт"/>
             </a>
-            <div class="main-header__top-actions">
+            <div class="main-header__top-actions top-actions">
                 <form class="main-header__search" method="POST" action="http://example.com/search">
+                    <button type="submit" class="main-header__search-submit visually-hidden">Искать</button>
                     <input type="text" class="main-header__search-input" aria-label="Ввод текста для поиска"/>
-                    <button type="submit" class="main-header__search-submit">Искать</button>
                 </form>
-                <a href="bookmarks" class="main-header__bookmarks-link main-header__bookmarks-link--full">
+                <a href="bookmarks" class="top-actions__link top-actions__link--full">
                     Закладки:
                     <span>10</span>
                 </a>
-                <a href="cart" class="main-header__cart-link main-header__cart-link--full">
+                <a href="cart" class="top-actions__link">
                     Корзина:
                     <span>0</span>
                 </a>
-                <a href="main-header__make-order" class="order-link">
+                <a href="#" class="top-actions__link top-actions__link--order">
                     Оформить заказ
                 </a>
             </div>
-            <p class="main-header__title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-            <p class="main-header__contacts">
-                <a class="main-header__phone" href="tel:+7(812)5550555" aria-label="Позвонить">+7(812)5550555</a>
-                <span class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-            </p>
-            <ul class="account-actions account-actions--logged-in">
-                <li class="account-actions__logout">
-                    <span class="account-actions__text">Равшан Джамшутович</span>
-                    <button class="account-actions__logout-button" type="button" aria-label="Выйти из системы">Выйти</button>
-                </li>
-                <li class="account-actions__personal"><a href="#">Мои заказы</a></li>
-                <li class="account-actions__personal"><a href="#">Личный кабинет</a></li>
-            </ul>
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a href="index.html">Главная</a></li>
-                    <li class="main-nav__item"><a href="#">Компания</a></li>
-                    <li class="main-nav__item main-nav__item--current">Каталог</li>
-                    <li class="main-nav__item"><a href="#">Новости</a></li>
-                    <li class="main-nav__item"><a href="#">Спецпредложения</a></li>
-                    <li class="main-nav__item"><a href="#">Доставка</a></li>
-                    <li class="main-nav__item"><a href="#">Контакты</a></li>
+            <div class="main-header__wr">
+                <p class="main-header__title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+                <p class="main-header__contacts">
+                    <a class="main-header__phone" href="tel:+7(812)5550555" aria-label="Позвонить">+7(812)5550555</a>
+                    <span class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                </p>
+                <ul class="account-actions account-actions--logged-in">
+                    <li class="account-actions__logout">
+                        <button class="account-actions__logout-button" type="button" aria-label="Выйти из системы">
+                            <span class="account-actions__text">Равшан Джамшутович</span>
+                        </button>
+                    </li>
+                    <li class="account-actions__personal"><a href="#">Мои заказы</a></li>
+                    <li class="account-actions__personal"><a href="#">Личный кабинет</a></li>
                 </ul>
-            </nav>
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                        <li class="main-nav__item"><a href="#">Компания</a></li>
+                        <li class="main-nav__item main-nav__item--current">Каталог</li>
+                        <li class="main-nav__item"><a href="#">Новости</a></li>
+                        <li class="main-nav__item"><a href="#">Спецпредложения</a></li>
+                        <li class="main-nav__item"><a href="#">Доставка</a></li>
+                        <li class="main-nav__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
@@ -75,23 +78,23 @@
                         <legend class="main-filter__title">Производители</legend>
                         <ul class="main-filter__list">
                             <li class="main-filter__item">
-                                <input type="checkbox" class="visually-hidden main-filter__checkbox main-filter__checkbox--checked" id="filter-bosch" name="bosch"/>
+                                <input type="checkbox" class="main-filter__checkbox main-filter__checkbox--checked" id="filter-bosch" name="bosch" checked/>
                                 <label for="filter-bosch">Bosch</label>
                             </li>
                             <li class="main-filter__item">
-                                <input type="checkbox" class="visually-hidden main-filter__checkbox" id="filter-interskol" name="interskol"/>
+                                <input type="checkbox" class="main-filter__checkbox" id="filter-interskol" name="interskol"/>
                                 <label for="filter-interskol">Интерскол</label>
                             </li>
                             <li class="main-filter__item">
-                                <input type="checkbox" class="visually-hidden main-filter__checkbox__checkbox--checked" id="filter-makita" name="makita"/>
+                                <input type="checkbox" class="main-filter__checkbox__checkbox--checked" id="filter-makita" name="makita" checked/>
                                 <label for="filter-makita">Makita</label>
                             </li>
                             <li class="main-filter__item">
-                                <input type="checkbox" class="visually-hidden main-filter__checkbox" id="filter-dewalt" name="dewalt"/>
+                                <input type="checkbox" class="main-filter__checkbox" id="filter-dewalt" name="dewalt"/>
                                 <label for="filter-dewalt">Dewalt</label>
                             </li>
                             <li class="main-filter__item">
-                                <input type="checkbox" class="visually-hidden main-filter__checkbox" id="filter-hitachi" name="hitachi"/>
+                                <input type="checkbox" class="main-filter__checkbox" id="filter-hitachi" name="hitachi"/>
                                 <label for="filter-hitachi">Hitachi</label>
                             </li>
                         </ul>
@@ -100,11 +103,11 @@
                         <h3 class="main-filter__title">Питание</h3>
                         <ul class="main-filter__list">
                             <li class="main-filter__item">
-                                <input type="radio" class="visually-hidden main-filter__radio" id="filter-accum" name="main-filter-radio"/>
+                                <input type="radio" class="main-filter__radio" id="filter-accum" name="main-filter-radio"/>
                                 <label for="filter-accum">Аккумуляторные</label>
                             </li>
                             <li class="main-filter__item">
-                                <input type="radio" class="visually-hidden main-filter__radio" id="filter-network" name="main-filter-radio"/>
+                                <input type="radio" class="main-filter__radio" id="filter-network" name="main-filter-radio"/>
                                 <label for="filter-network">Сетевые</label>
                             </li>
                         </ul>
@@ -229,10 +232,10 @@
             <p class="owner-copyright">
                 © 2010–2017 Компания «Техномарт»<br/> Все права защищены
             </p>
-            <ul class="social">
-                <li class="social__icon social__icon--vkontakte"><a href="#">Мы во ВКонтакте</a></li>
-                <li class="social__icon social__icon--facebook"><a href="#">Мы в Facebook</a></li>
-                <li class="social__icon social__icon--instagram"><a href="#">Мы в Instagram</a></li>
+            <ul class="social-list">
+                <li class="social__icon social__icon--vkontakte"><a href="#" aria-label="Мы во ВКонтакте"></a></li>
+                <li class="social__icon social__icon--facebook"><a href="#" aria-label="Мы в Facebook"></a></li>
+                <li class="social__icon social__icon--instagram"><a href="#" aria-label="Мы в Instagram"></a></li>
             </ul>
             <div class="feedback">
                 <span class="feedback__text">Обратная связь</span>

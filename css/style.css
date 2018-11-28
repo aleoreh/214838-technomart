@@ -27,7 +27,27 @@ a {
     text-decoration: none;
 }
 
+.logo {
+    background-color: #ef3341;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+}
+
+.logo:hover {
+    background-color: #cb2834;
+}
+
+.logo:active,
+.logo:focus {
+    background-color: #bb222e;
+}
+
+/* main-header */
+
 .main-header__search-input {
+    border: 0;
     color: #ffffff;
     background-color: #293449;
     font-size: 17px;
@@ -53,44 +73,8 @@ a {
     background-color: #212a3a;
 }
 
-.main-header__bookmarks-link,
-.main-header__cart-link,
-.order-link {
-    font-family: Cuprum;
-    color: #ffffff;
-    font-size: 17px;
-    line-height: 18px;
-}
-
-.main-header__bookmarks-link:active,
-.main-header__cart-link:active,
-.order-link:active,
-.main-header__bookmarks-link:focus,
-.main-header__cart-link:focus,
-.order-link:focus {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #161d29;
-}
-
-.order-link {
-    color: #ffffff;
-    background-color: #63a63e;
-}
-
-.order-link:hover {
-    background-color: #5fbb2d;
-}
-
-.order-link:focus,
-.order-link:active {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #518534;
-}
-
-/* TODO: Как оформить .order-link при активном .main-header__search-input? */
-
 .main-header {
-    font-family: Cuprum;
+    font-family: Cuprum, Arial, sans-serif;
 }
 
 .main-header__wr {
@@ -111,39 +95,121 @@ a {
     line-height: 21px;
 }
 
+.main-header__phone:hover,
+.main-header__phone:active,
+.main-header__phone:focus {
+    color: #ee36437f;
+}
+
 .main-header__address {
     color: #32425c;
     font-size: 14px;
     line-height: 24px;
 }
 
+/* top-actions */
+
+.top-actions__link {
+    font-family: Cuprum, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.top-actions__link:active,
+.top-actions__link:focus {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #161d29;
+}
+
+.top-actions__link--order {
+    color: #ffffff;
+    background-color: #63a63e;
+}
+
+.top-actions__link--order:hover {
+    background-color: #5fbb2d;
+}
+
+.top-actions__link--order:focus,
+.top-actions__link--order:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #518534;
+}
+
+/* TODO: Как оформить .main-header__order-link при активном .main-header__search-input? */
+
+/* account-actions */
+
 .account-actions {
     list-style: none;
 }
 
-.account-actions__login,
-.account-actions__register {
+.account-actions__item {
     height: 45px;
     background-color: #ffffff;
 }
-.account-actions__login a,
-.account-actions__register a {
+.account-actions__item a {
     color: #000000;
     font-size: 21px;
     line-height: 21px;
 }
 
-.account-actions__login a:hover,
-.account-actions__register a:hover {
+.account-actions__item a:hover {
     color: #ee3643;
 }
 
-.account-actions__login a:focus,
-.account-actions__register a:focus,
-.account-actions__login a:active,
-.account-actions__register a:active {
+.account-actions__item a:focus,
+.account-actions__item a:active {
     color: rgba(0, 0, 0, 0.5);
 }
+
+.account-actions__logout {
+    background-color: #ffffff;
+    line-height: 45px;
+}
+
+.account-actions__logout-button {
+    height: 45px;
+    width: 299px;
+    background-color: #ffffff;
+    background-image: url("../img/icon-logout.svg");
+    background-repeat: no-repeat;
+    background-position: 269px 50%;
+
+    border: none;
+}
+
+.account-actions__logout-button:hover,
+.account-actions__logout-button:active,
+.account-actions__logout-button:focus {
+    /* TODO: Как изменить цвет или прозрачность? */
+    background-image: url("../img/icon-logout.svg");
+}
+
+.account-actions__logout-button::before {
+    content: " ";
+}
+
+.account-actions__text {
+    font-size: 21px;
+}
+
+.account-actions__personal a {
+    color: #32425c;
+    text-decoration: underline;
+}
+
+.account-actions__personal a:hover {
+    color: #ee3643;
+}
+
+.account-actions__personal a:active,
+.account-actions__personal a:focus {
+    color: #32425c7f;
+}
+
+/* main-nav */
 
 .main-nav {
     color: #ffffff;
@@ -167,4 +233,216 @@ a {
 .main-nav__item:not(.main-nav__item--current) a:focus {
     background-color: #1d2739;
     color: rgba(255, 255, 255, 0.5);
+}
+
+/* main */
+
+.main__title {
+    background-color: #f2f6f8;
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.main-filter__title {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-filter__list {
+    list-style: none;
+}
+
+.main-filter__item {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.main-filter__submit {
+    background-color: transparent;
+    border: 1px solid #e6e6e6;
+    font-weight: 13px;
+    text-transform: uppercase;
+}
+
+/* about, contacts */
+
+.about,
+.contacts {
+    font-family: Cuprum, Arial, sans-serif;
+    color: #000000;
+}
+
+.about__delivery-list {
+    list-style: none;
+}
+
+.about__title,
+.contacts__title {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.about__text {
+    font-family: PTSans, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.about__delivery-item {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about__details-link,
+.contacts__feedback-link {
+    height: 38px;
+    line-height: 38px;
+
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    background-color: #ef3341;
+}
+
+.about__details-link:hover,
+.contacts__feedback-link:hover {
+    background-color: #cb2834;
+}
+
+.about__details-link:active,
+.about__details-link:focus,
+.contacts__feedback-link:active,
+.contacts__feedback-link:focus {
+    background-color: #bb222e;
+}
+
+/* footer */
+
+.main-footer__top-wr {
+    background-color: #2e405c;
+    color: #ffffff;
+}
+
+.main-footer__bottom-wr {
+    background-color: #293449;
+    color: #ffffff;
+}
+
+.main-footer__address,
+.main-footer__phone {
+    font-size: 18px;
+}
+
+.main-footer__phone {
+    color: #ffffff;
+}
+
+.main-footer__phone:hover,
+.main-footer__phone:active,
+.main-footer__phone:focus {
+    color: rgba(255,255,255,0.5);
+}
+
+.main-footer-nav__list {
+    list-style: none;
+}
+
+.main-footer-nav__item a {
+    font-size: 18px;
+    color: #f1f5f7;
+}
+
+.main-footer-nav__item a:hover {
+    text-decoration: underline;
+}
+
+.main-footer-nav__item a:active,
+.main-footer-nav__item a:focus {
+    color: rgba(255,255,255,0.5);
+}
+
+.main-footer-groups-nav__list {
+    list-style: none;
+}
+
+.main-footer-groups-nav__item a {
+    font-size: 18px;
+    color: rgb(255, 210, 129);
+}
+
+.main-footer-groups-nav__item a:hover {
+    text-decoration: underline;
+}
+
+.main-footer-groups-nav__item a:active,
+.main-footer-groups-nav__item a:focus {
+    color: rgb(255, 210, 129, 0.5);
+}
+
+.owner-copyright {
+    font-size: 16px;
+}
+
+.social-list {
+    list-style: none;
+}
+
+.social__icon {
+    height: 42px;
+    width: 42px;
+    border-radius: 24px;
+    background-color: #1b2537;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/* TODO: Как показать ссылку? */
+.social__icon a::before {
+    content: " ";
+}
+
+.social__icon--vkontakte {
+    background-image: url("../img/icon-vk.svg");
+}
+
+.social__icon--facebook {
+    background-image: url("../img/icon-fb.svg");
+}
+
+.social__icon--instagram {
+    background-image: url("../img/icon-insta.svg");
+}
+
+.feedback,
+.dev-copyright {
+    font-size: 16px;
+}
+
+.feedback__text,
+.dev-copyright__text {
+    color: #ffffff;
+}
+
+.feedback__link,
+.dev-copyright__link {
+    color: #ffd180;
+}
+
+.feedback__link:hover,
+.dev-copyright__link:hover {
+    text-decoration: underline;
+}
+
+.feedback__link:active,
+.feedback__link:focus,
+.dev-copyright__link:active,
+.dev-copyright__link:focus {
+    color: #ef3341;
+}
+
+.modal {
+    display: none;
 }
