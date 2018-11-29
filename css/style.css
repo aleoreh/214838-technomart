@@ -35,12 +35,12 @@ a {
     font-size: 30px;
 }
 
-.logo:hover {
+a.logo:hover {
     background-color: #cb2834;
 }
 
-.logo:active,
-.logo:focus {
+a.logo:active,
+a.logo:focus {
     background-color: #bb222e;
 }
 
@@ -49,7 +49,7 @@ a {
 .main-header__search-input {
     border: 0;
     color: #ffffff;
-    background-color: #293449;
+    background-color: #ffffff00;
     font-size: 17px;
     line-height: 18px;
 }
@@ -255,6 +255,7 @@ a {
     list-style: none;
 }
 
+/* TODO: Разобраться, как стилизовать hover и active */
 .main-filter__item {
     font-size: 15px;
     text-transform: uppercase;
@@ -265,6 +266,148 @@ a {
     border: 1px solid #e6e6e6;
     font-weight: 13px;
     text-transform: uppercase;
+}
+
+.main-filter__submit:hover {
+    border: 1px solid #bec7cb;
+}
+
+.main-filter__submit:active,
+.main-filter__submit:focus {
+    border: 1px solid #ef3341;
+}
+
+/* catalog */
+
+.catalog__list {
+    list-style: none;
+}
+
+.catalog__item {
+    border: 1px solid #e6e6e6;
+}
+
+.goods-card__link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.goods-card__price {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.goods-card__price::after {
+    content: " р.";
+    text-transform: uppercase;
+}
+
+.goods-card__price--old {
+    color: #999999;
+    text-decoration-line: line-through;
+}
+
+.goods-card__price--new {
+    background-color: #ef3341;
+    color: #ffffff;
+}
+
+.goods-card__button {
+    border: 3px solid;
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.goods-card__button--submit {
+    border-color: #63a83c;
+    padding-left: 49px;
+    background-color: #63a83c;
+    /* TODO: Как изменить цвет или прозрачность? */
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+}
+
+.goods-card__button--submit:hover {
+    border-color: #5fbc29;
+    background-color: #5fbc29;
+}
+
+.goods-card__button--submit:active,
+.goods-card__button--submit:focus {
+    border-color: #508631;
+    background-color: #508631;
+}
+
+.goods-card__button--bookmark {
+    border-color: #63a83c;
+    padding-left: 49px;
+    color: #32425c;
+    background-color: #ffffff;
+    /* TODO: Как изменить цвет или прозрачность? */
+    background-repeat: no-repeat;
+}
+
+.goods-card__button--bookmark:hover {
+    border-color: #2e405c;
+    color: #32425c;
+}
+
+.goods-card__button--bookmark:active,
+.goods-card__button--bookmark:focus {
+    border-color: #2e405c7d;
+    color: #32425c7d;
+}
+
+/* pagination */
+
+.pagination__list {
+    list-style: none;
+}
+
+.pagination__item {
+    font-size: 13px;
+}
+
+.pagination__item a {
+    border: 1px solid #bec7cb;
+    color: #000000;
+}
+
+.pagination__item a:hover,
+.pagination__button:hover {
+    border-color: #bec7cb;
+}
+
+.pagination__item a:active,
+.pagination__item a:focus,
+.pagination__button:active,
+.pagination__button:focus {
+    border-color: #ef3341;
+}
+
+.pagination__item--current {
+    color: #ffffff;
+    background-color: #ef3341;
+}
+
+.pagination__button {
+    border: 1px solid #bec7cb;
+    background-color: #ffffff;
+}
+
+/* group-descr */
+
+.group-descr__title {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.group-descr__text {
+    font-size: 13px;
 }
 
 /* about, contacts */
@@ -320,6 +463,10 @@ a {
 }
 
 /* footer */
+
+.main-footer {
+    font-family: Cuprum, Arial, sans-serif;
+}
 
 .main-footer__top-wr {
     background-color: #2e405c;
