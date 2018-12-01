@@ -27,7 +27,14 @@ a {
     text-decoration: none;
 }
 
-.logo {
+/* main-header */
+
+.main-header {
+    font-family: Cuprum, Arial, sans-serif;
+}
+
+.main-header__logo,
+.main-footer__logo {
     background-color: #ef3341;
     color: #ffffff;
     text-transform: uppercase;
@@ -35,21 +42,22 @@ a {
     font-size: 30px;
 }
 
-a.logo:hover {
+.main-header__logo:not(.main-header__logo--static):hover,
+.main-footer__logo:hover {
     background-color: #cb2834;
 }
 
-a.logo:active,
-a.logo:focus {
+.main-header__logo:not(.main-header__logo--static):active,
+.main-header__logo:not(.main-header__logo--static):focus,
+.main-footer__logo:active,
+.main-footer__logo:focus {
     background-color: #bb222e;
 }
-
-/* main-header */
 
 .main-header__search-input {
     border: 0;
     color: #ffffff;
-    background-color: #ffffff00;
+    background-color: rgba(255, 255, 255, 0);
     font-size: 17px;
     line-height: 18px;
 }
@@ -73,11 +81,7 @@ a.logo:focus {
     background-color: #212a3a;
 }
 
-.main-header {
-    font-family: Cuprum, Arial, sans-serif;
-}
-
-.main-header__wr {
+.main-header__wrapper {
     color: #000000;
     background-color: #f3f7f8;
 }
@@ -98,7 +102,7 @@ a.logo:focus {
 .main-header__phone:hover,
 .main-header__phone:active,
 .main-header__phone:focus {
-    color: #ee36437f;
+    color: rgba(238, 54, 67, 0.5);
 }
 
 .main-header__address {
@@ -109,58 +113,73 @@ a.logo:focus {
 
 /* top-actions */
 
-.top-actions__link {
+.main-header__link {
     font-family: Cuprum, Arial, sans-serif;
     color: #ffffff;
     font-size: 17px;
     line-height: 18px;
 }
 
-.top-actions__link:active,
-.top-actions__link:focus {
+.main-header__link:active,
+.main-header__link:focus {
     color: rgba(255, 255, 255, 0.5);
     background-color: #161d29;
 }
 
-.top-actions__link--order {
+.main-header__link--order {
     color: #ffffff;
     background-color: #63a63e;
 }
 
-.top-actions__link--order:hover {
+.main-header__link--order:hover {
     background-color: #5fbb2d;
 }
 
-.top-actions__link--order:focus,
-.top-actions__link--order:active {
+.main-header__link--order:focus,
+.main-header__link--order:active {
     color: rgba(255, 255, 255, 0.5);
     background-color: #518534;
+}
+
+/* breadcrumbs */
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs__item--home {
+    background-color: #ffffff;
+    color: #c1c6ce;
+    background-image: url("../img/icon-home.svg");
+    background-repeat: no-repeat;
 }
 
 /* TODO: Как оформить .main-header__order-link при активном .main-header__search-input? */
 
 /* account-actions */
 
-.account-actions {
+.main-header__account-actions {
     list-style: none;
 }
 
-.account-actions__item {
+.main-header__account-action {
     height: 45px;
     background-color: #ffffff;
 }
-.account-actions__item a {
+.main-header__account-action-button {
+    border: none;
     color: #000000;
+    background-color: #ffffff;
     font-size: 21px;
     line-height: 21px;
 }
 
-.account-actions__item a:hover {
+.main-header__account-action-button:hover {
     color: #ee3643;
 }
 
-.account-actions__item a:focus,
-.account-actions__item a:active {
+.main-header__account-action-button:focus,
+.main-header__account-action-button:active {
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -183,7 +202,7 @@ a.logo:focus {
 .account-actions__logout-button:hover,
 .account-actions__logout-button:active,
 .account-actions__logout-button:focus {
-    /* TODO: Как изменить цвет или прозрачность? */
+    /* DONE: Будет рассматриваться позже TODO: Как изменить цвет или прозрачность? */
     background-image: url("../img/icon-logout.svg");
 }
 
@@ -206,7 +225,7 @@ a.logo:focus {
 
 .account-actions__personal a:active,
 .account-actions__personal a:focus {
-    color: #32425c7f;
+    color: rgba(50, 66, 92, 0.5);
 }
 
 /* main-nav */
@@ -269,12 +288,12 @@ a.logo:focus {
 }
 
 .main-filter__submit:hover {
-    border: 1px solid #bec7cb;
+    border-color: #bec7cb;
 }
 
 .main-filter__submit:active,
 .main-filter__submit:focus {
-    border: 1px solid #ef3341;
+    border-color: #ef3341;
 }
 
 /* catalog */
@@ -325,7 +344,7 @@ a.logo:focus {
     border-color: #63a83c;
     padding-left: 49px;
     background-color: #63a83c;
-    /* TODO: Как изменить цвет или прозрачность? */
+    /* DONE: Будет рассмотрено позже TODO: Как изменить цвет или прозрачность? */
     background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
 }
@@ -346,7 +365,7 @@ a.logo:focus {
     padding-left: 49px;
     color: #32425c;
     background-color: #ffffff;
-    /* TODO: Как изменить цвет или прозрачность? */
+    /* DONE: Будет рассмотрено позже TODO: Как изменить цвет или прозрачность? */
     background-repeat: no-repeat;
 }
 
@@ -357,8 +376,8 @@ a.logo:focus {
 
 .goods-card__button--bookmark:active,
 .goods-card__button--bookmark:focus {
-    border-color: #2e405c7d;
-    color: #32425c7d;
+    border-color: rgba(46, 64, 92, 0.5);
+    color: rgba(50, 66, 92, 0.5);
 }
 
 /* pagination */
@@ -440,11 +459,9 @@ a.logo:focus {
 
 .about__details-link,
 .contacts__feedback-link {
-    height: 38px;
-    line-height: 38px;
-
     color: #ffffff;
     font-size: 14px;
+    line-height: 38px;
     text-transform: uppercase;
 
     background-color: #ef3341;
@@ -468,12 +485,12 @@ a.logo:focus {
     font-family: Cuprum, Arial, sans-serif;
 }
 
-.main-footer__top-wr {
+.main-footer__top-wrapper {
     background-color: #2e405c;
     color: #ffffff;
 }
 
-.main-footer__bottom-wr {
+.main-footer__bottom-wrapper {
     background-color: #293449;
     color: #ffffff;
 }
@@ -493,21 +510,21 @@ a.logo:focus {
     color: rgba(255,255,255,0.5);
 }
 
-.main-footer-nav__list {
+.main-footer-site-nav__list {
     list-style: none;
 }
 
-.main-footer-nav__item a {
+.main-footer-site-nav__item a {
     font-size: 18px;
     color: #f1f5f7;
 }
 
-.main-footer-nav__item a:hover {
+.main-footer-site-nav__item a:hover {
     text-decoration: underline;
 }
 
-.main-footer-nav__item a:active,
-.main-footer-nav__item a:focus {
+.main-footer-site-nav__item a:active,
+.main-footer-site-nav__item a:focus {
     color: rgba(255,255,255,0.5);
 }
 
