@@ -41,23 +41,46 @@ a {
 /* main-header */
 
 .main-header {
+    display: flex;
+
     width: 100%;
     padding-bottom: 60px;
+
+    flex-direction: column;
 
     font-family: Cuprum, Arial, sans-serif;
 
     background-color: #f3f7f8;
 }
 
-.main-header__top-actions-wrapper {
+.main-header__top-actions {
     background-color: #33445a;
+    color: #ffffff;
+    margin-bottom: 49px;
 }
 
-.main-header__top-actions,
-.main-header__wrapper {
+.main-header__top-actions-content {
     display: flex;
 
-    justify-content: space-between;
+    height: 42px;
+}
+
+.main-header__all-actions {
+    background-color: #f4f7f9;
+    color: #000000;
+}
+
+.main-header__content {
+    display: flex;
+
+    margin-bottom: 30px;
+}
+
+.main-header__logo {
+    box-sizing: border-box;
+    width: 220px;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 
 .main-header__logo,
@@ -81,6 +104,10 @@ a {
     background-color: #bb222e;
 }
 
+.main-header__search {
+    margin-right: auto;
+}
+
 .main-header__search-input {
     border: 0;
     color: #ffffff;
@@ -99,22 +126,18 @@ a {
     background-color: #ffffff;
 }
 
-.main-header__top-actions {
-    color: #ffffff;
-}
-
 .main-header__top-actions:hover {
     background-color: #212a3a;
 }
 
-.main-header__wrapper {
-    color: #000000;
-}
-
 .main-header__title {
+    box-sizing: border-box;
+
     width: 300px;
+    margin: 0;
     margin-right: 20px;
     padding-left: 53px;
+    padding-right: 30px;
 
     color: #ee3643;
     font-size: 16px;
@@ -123,11 +146,14 @@ a {
 }
 
 .main-header__contacts {
-    width: 270px;
-    margin-left: 70px;
+    width: 300px;
 }
 
 .main-header__phone {
+    display: block;
+
+    border: 3px solid #ffffff;
+
     color: #ee3643;
     font-size: 21px;
     line-height: 21px;
@@ -148,6 +174,8 @@ a {
 /* top-actions */
 
 .main-header__link {
+    width: 150px;
+
     font-family: Cuprum, Arial, sans-serif;
     color: #ffffff;
     font-size: 17px;
@@ -204,31 +232,34 @@ a {
 .main-header__account-actions {
     display: flex;
 
-    height: 45px;
-    width: 280px;
     margin-left: auto;
-
-    justify-content: space-between;
 
     list-style: none;
 }
 
-.main-header__account-actions--logged-in {
-    flex-wrap: wrap;
-}
+.main-header__account-action {
+    box-sizing: border-box;
 
-.main-header__account-action--logout {
-    width: 100%;
+    height: 45px;
+    margin-left: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 
-    background-color: #ffffff;
-}
-
-.main-header__account-action-button {
-    border: none;
-    color: #000000;
     background-color: #ffffff;
     font-size: 21px;
     line-height: 21px;
+}
+
+.main-header__account-action-button {
+    color: #000000;
+}
+
+.main-header__account-action-button__register {
+    width: 150px
+}
+
+.main-header__account-action-button__login {
+    width: 121px;
 }
 
 .main-header__account-action-button:hover {
@@ -288,6 +319,7 @@ a {
 /* main-nav */
 
 .main-nav {
+
     color: #ffffff;
     background-color: #f3f7f8;
 }
@@ -295,6 +327,7 @@ a {
 .main-nav__list {
     display: flex;
 
+    height: 60px;
     justify-content: space-around;
 
     list-style: none;
