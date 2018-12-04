@@ -10,60 +10,54 @@
     </head>
 
     <body>
-        <header class="main-header">
-            <div class="main-header__top-actions">
-                <div class="main-header__wrapper container">
-                    <div class="main-header__top-actions-content">
-                        <a class="main-header__logo" href="index.html" aria-label="На главную">Техномарт</a>
-                        <form class="main-header__search" method="POST" action="http://example.com/search">
-                            <button type="submit" class="main-header__search-submit visually-hidden">Искать</button>
-                            <input type="text" class="main-header__search-input" aria-label="Ввод текста для поиска"/>
-                        </form>
-                        <a href="bookmarks" class="main-header__link main-header__link--full">
-                            Закладки:
-                            <span>10</span>
-                        </a>
-                        <a href="cart" class="main-header__link">
-                            Корзина:
-                            <span>0</span>
-                        </a>
-                        <a href="#" class="main-header__link main-header__link--order">
-                            Оформить заказ
-                        </a>
-                    </div>
-                </div>
+        <header class="main-header"> <!-- light blue background -->
+            <div class="main-header__top"> <!-- dark blue background -->
+                <section class="main-header__top-actions container">
+                    <a class="main-header__logo" href="index.html" aria-label="На главную">Техномарт</a>
+                    <form class="main-header__search" method="POST" action="http://example.com/search">
+                        <button type="submit" class="main-header__search-submit visually-hidden">Искать</button>
+                        <input type="text" class="main-header__search-input" aria-label="Ввод текста для поиска"/>
+                    </form>
+                    <a href="bookmarks" class="main-header__link main-header__link--full">
+                        Закладки:
+                        <span>10</span>
+                    </a>
+                    <a href="cart" class="main-header__link">
+                        Корзина:
+                        <span>0</span>
+                    </a>
+                    <a href="#" class="main-header__link main-header__link--order">
+                        Оформить заказ
+                    </a>
+                </section>
             </div>
-            <div class="main-header__all-actions">
-                <div class="main-header__wrapper container">
-                    <div class="main-header__content">
-                        <p class="main-header__title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-                        <p class="main-header__contacts">
-                            <a class="main-header__phone" href="tel:+7(812)5550555" aria-label="Позвонить">+7(812)5550555</a>
-                            <span class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                        </p>
-                        <ul class="main-header__account-actions main-header__account-actions--logged-in">
-                            <li class="main-header__account-action main-header__account-action--logout">
-                                <button class="main-header__account-action-button" type="button" aria-label="Выйти из системы">
-                                    <span class="main-header__account-action-text">Равшан Джамшутович</span>
-                                </button>
-                            </li>
-                            <li class="main-header__account-link"><a href="#">Мои заказы</a></li>
-                            <li class="main-header__account-link"><a href="#">Личный кабинет</a></li>
-                        </ul>
-                    </div>
-                    <nav class="main-nav">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-                            <li class="main-nav__item"><a href="#">Компания</a></li>
-                            <li class="main-nav__item main-nav__item--current">Каталог</li>
-                            <li class="main-nav__item"><a href="#">Новости</a></li>
-                            <li class="main-nav__item"><a href="#">Спецпредложения</a></li>
-                            <li class="main-nav__item"><a href="#">Доставка</a></li>
-                            <li class="main-nav__item"><a href="#">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="main-header__middle container"> <!-- title, contacts, login; Нет общей темы, поэтому - div -->
+                <p class="main-header__title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+                <p class="main-header__contacts">
+                    <a class="main-header__phone" href="tel:+7(812)5550555" aria-label="Позвонить">+7(812)5550555</a>
+                    <span class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                </p>
+                <ul class="main-header__account-actions main-header__account-actions--logged-in">
+                    <li class="main-header__account-action main-header__account-action--logout">
+                        <button class="main-header__account-action-button" type="button" aria-label="Выйти из системы">
+                            <span class="main-header__account-action-text">Равшан Джамшутович</span>
+                        </button>
+                    </li>
+                    <li class="main-header__account-link"><a href="#">Мои заказы</a></li>
+                    <li class="main-header__account-link"><a href="#">Личный кабинет</a></li>
+                </ul>
             </div>
+            <nav class="main-nav container">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                    <li class="main-nav__item"><a href="#">Компания</a></li>
+                    <li class="main-nav__item main-nav__item--current">Каталог</li>
+                    <li class="main-nav__item"><a href="#">Новости</a></li>
+                    <li class="main-nav__item"><a href="#">Спецпредложения</a></li>
+                    <li class="main-nav__item"><a href="#">Доставка</a></li>
+                    <li class="main-nav__item"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
         </header>
         <main class="main main--catalog container">
             <ul class="breadcrumbs">
@@ -221,16 +215,16 @@
             </section>
         </main>
         <footer class="main-footer">
-            <div class="main-footer__top-wrapper">
+            <div class="main-footer__top"> <!-- dark blue background -->
                 <div class="main-footer__top-container container">
-                    <div class="main-footer__top-wrapper-left">
+                    <div class="main-footer__top-left">
                         <a class="main-footer__logo logo" href="index.html">Техномарт</a>
                         <p class="main-footer__contacts">
                             <span class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                             <a class="main-footer__phone" href="tel:+7(812)5550555" aria-label="Позвонить">+7(812)5550555</a>
                         </p>
                     </div>
-                    <div class="main-footer__top-wrapper-right">
+                    <div class="main-footer__top-right">
                         <ul class="main-footer-site-nav__list">
                             <li class="main-footer-site-nav__item"><a href="#">Компания</a></li>
                             <li class="main-footer-site-nav__item"><a href="#">Новости</a></li>
@@ -247,7 +241,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-footer__bottom-wrapper">
+            <div class="main-footer__bottom">
                 <div class="main-footer__bottom-container container">
                     <p class="main-footer__owner-copyright">
                         © 2010–2017 Компания «Техномарт»<br/> Все права защищены

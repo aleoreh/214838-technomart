@@ -41,39 +41,30 @@ a {
 /* main-header */
 
 .main-header {
-    display: flex;
-
     width: 100%;
     padding-bottom: 60px;
-
-    flex-direction: column;
 
     font-family: Cuprum, Arial, sans-serif;
 
     background-color: #f3f7f8;
 }
 
-.main-header__top-actions {
+.main-header__top {
     background-color: #33445a;
     color: #ffffff;
-    margin-bottom: 49px;
 }
 
-.main-header__top-actions-content {
+.main-header__top-actions {
     display: flex;
 
     height: 42px;
+    margin-bottom: 46px;
 }
 
-.main-header__all-actions {
-    background-color: #f4f7f9;
-    color: #000000;
-}
-
-.main-header__content {
+.main-header__middle {
     display: flex;
 
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .main-header__logo {
@@ -133,9 +124,8 @@ a {
 .main-header__title {
     box-sizing: border-box;
 
-    width: 300px;
+    width: 310px;
     margin: 0;
-    margin-right: 20px;
     padding-left: 53px;
     padding-right: 30px;
 
@@ -146,7 +136,7 @@ a {
 }
 
 .main-header__contacts {
-    width: 300px;
+    width: 320px;
 }
 
 .main-header__phone {
@@ -232,8 +222,10 @@ a {
 .main-header__account-actions {
     display: flex;
 
+    width: 310px;
     margin-left: auto;
 
+    justify-content: flex-end;
     list-style: none;
 }
 
@@ -327,11 +319,18 @@ a {
 .main-nav__list {
     display: flex;
 
+    margin: 0;
+    padding: 0;
     height: 60px;
     justify-content: space-around;
 
     list-style: none;
     background-color: #2e405c;
+}
+
+.main-nav__item {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 17px;
 }
 
 .main-nav__item a {
@@ -351,9 +350,6 @@ a {
 /* main */
 
 .main {
-    display: flex;
-
-    justify-content: space-between;
 }
 
 .main--catalog {
@@ -570,6 +566,12 @@ a {
 
 /* about, contacts */
 
+.main__about-wrapper {
+    display: flex;
+
+    padding-top: 77px;
+}
+
 .about {
     width: 640px;
 }
@@ -586,11 +588,17 @@ a {
 
 .about__title,
 .contacts__title {
+    display: block;
+
+    padding-bottom: 15px;
+
     font-size: 30px;
     text-transform: uppercase;
 }
 
 .about__text {
+    width: 540px;
+
     font-family: PTSans, Arial, sans-serif;
     font-size: 13px;
 }
@@ -630,6 +638,10 @@ a {
     margin: 0;
 }
 
+.contacts__text {
+    width: 220px;
+}
+
 /* footer */
 
 .main-footer {
@@ -638,7 +650,7 @@ a {
     font-family: Cuprum, Arial, sans-serif;
 }
 
-.main-footer__top-wrapper {
+.main-footer__top {
     background-color: #2e405c;
     color: #ffffff;
 }
@@ -651,16 +663,16 @@ a {
     display: flex;
 }
 
-.main-footer__top-wrapper-left {
+.main-footer__top-left {
     width: 380px;
     margin-right: 10px;
 }
 
-.main-footer__top-wrapper-right {
+.main-footer__top-right {
     width: 550px;
 }
 
-.main-footer__bottom-wrapper {
+.main-footer__bottom {
     background-color: #293449;
     color: #ffffff;
 }
