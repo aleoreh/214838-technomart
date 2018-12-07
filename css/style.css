@@ -54,10 +54,6 @@ a {
     color: #ffffff;
 }
 
-.main-header__top:hover {
-    background-color: #293349;
-}
-
 .main-header__top-actions {
     display: flex;
 
@@ -145,10 +141,6 @@ a {
     background-color: #ffffff;
 }
 
-.main-header__top-actions:hover {
-    background-color: #212a3a;
-}
-
 .main-header__title {
     box-sizing: border-box;
 
@@ -188,12 +180,6 @@ a {
     background-position: 13px 9px;
 }
 
-.main-header__phone:hover,
-.main-header__phone:active,
-.main-header__phone:focus {
-    color: rgba(238, 54, 67, 0.5);
-}
-
 .main-header__address {
     display: block;
 
@@ -216,6 +202,10 @@ a {
     font-size: 17px;
     text-align: center;
     line-height: 41px;
+}
+
+.main-header__link:hover:not(.main-header__link--order):not(.main-header__link--full) {
+    background-color: #212939;
 }
 
 .main-header__link:active,
@@ -270,28 +260,67 @@ a {
 .breadcrumbs {
     display: flex;
 
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
+
+    flex-wrap: wrap;
+
     list-style: none;
 }
 
 .breadcrumbs__item {
-    margin-right: 40px;
+    position: relative;
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+    min-width: 14px;
+    height: 36px;
+    padding-right: 29px;
+    margin-right: 12px;
 
     font-size: 13px;
     text-transform: uppercase;
-}
-
-.breadcrumbs__item a {
-    display: block;
-
-    padding-top: 10px;
-    padding-bottom: 50px;
+    color: #c1c6ce;
 }
 
 .breadcrumbs__item--home {
-    background-color: #ffffff;
-    color: #c1c6ce;
+    width: 6px;
+
+    font-size: 0;
+}
+
+.breadcrumbs__item--home::before {
+    padding-right: 35px;
+}
+
+.breadcrumbs__item--home a {
+    display: block;
+    height: 14px;
+
     background-image: url("../img/icon-home.svg");
     background-repeat: no-repeat;
+    background-position: 0 2px;;
+}
+
+.breadcrumbs__item:not(.breadcrumbs__item--current)::before {
+    content: "";
+    position: absolute;
+    right: 0;
+
+    display: inline-block;
+    height: 14px;
+    padding-right: 31px;
+
+    background-image: url("../img/icon-right-small.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 2px;
+}
+
+.breadcrumbs__item--current {
+    margin-right: 0;
+    padding-right: 0;
 }
 
 /* TODO: Как оформить .main-header__order-link при активном .main-header__search-input? */
