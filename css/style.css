@@ -135,7 +135,7 @@ a {
 }
 
 .main-header__search-input:focus,
-main-header__search-input:active {
+.main-header__search-input:active {
     background-image: url("../img/icon-search-ed3543.svg");
 }
 
