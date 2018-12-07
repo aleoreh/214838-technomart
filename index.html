@@ -39,14 +39,25 @@
                     <a class="main-header__phone" href="tel:+7(812)5550555" aria-label="Позвонить">+7 (812) 555-05-55</a>
                     <span class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                 </p>
-                <ul class="main-header__account-actions">
-                    <li class="main-header__account-action">
-                        <a class="main-header__account-action-button main-header__account-action-button--login" href="login" aria-label="Войти в систему">Войти</a>
-                    </li>
-                    <li class="main-header__account-action">
-                        <a class="main-header__account-action-button main-header__account-action-button--register" href="register">Регистрация</a>
-                    </li>
-                </ul>
+                <section class="main-header__account">
+                    <ul class="main-header__account-actions main-header__account-actions--logged-out">
+                        <li class="main-header__account-action main-header__account-action--login">
+                            <a class="main-header__account-action-button" href="#" aria-label="Войти в систему">Войти</a>
+                        </li>
+                        <li class="main-header__account-action main-header__account-action--register">
+                            <a class="main-header__account-action-button" href="#" aria-label="Регистрация">Регистрация</a>
+                        </li>
+                        <li class="main-header__account-action main-header__account-action--logout">
+                            <a class="main-header__account-action-button" href="#" aria-label="Выйти из системы">
+                                <span class="main-header__account-action-text">Равшан Джамшутович</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="main-header__account-links main-header__account-links--logged-out">
+                        <li class="main-header__account-link"><a href="#">Мои заказы</a></li>
+                        <li class="main-header__account-link"><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </section>
             </div>
             <nav class="main-nav container">
                 <ul class="main-nav__list">
