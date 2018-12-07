@@ -88,7 +88,7 @@ a {
 }
 
 .main-header__logo,
-.footer-nav__logo {
+.main-footer__logo {
     background-color: #ef3341;
     color: #ffffff;
     text-transform: uppercase;
@@ -97,14 +97,14 @@ a {
 }
 
 .main-header__logo:not(.main-header__logo--static):hover,
-.footer-nav__logo:hover {
+.main-footer__logo:hover {
     background-color: #cb2834;
 }
 
 .main-header__logo:not(.main-header__logo--static):active,
 .main-header__logo:not(.main-header__logo--static):focus,
-.footer-nav__logo:active,
-.footer-nav__logo:focus {
+.main-footer__logo:active,
+.main-footer__logo:focus {
     background-color: #bb222e;
 }
 
@@ -882,20 +882,20 @@ a {
 
 /* footers */
 
-.footer-nav {
+.main-footer__nav {
     background-color: #3d546e;
     color: #ffffff;
 
     font-family: Cuprum, Arial, sans-serif;
 }
 
-.footer-nav__main-nav {
+.main-footer__main-nav {
     display: flex;
 
     margin-bottom: 32px;
 }
 
-.footer-nav__logo {
+.main-footer__logo {
     width: 220px;
     height: 64px;
     margin-right: auto;
@@ -906,7 +906,7 @@ a {
     box-shadow: 0 3px #b0202b;
 }
 
-.footer-nav__main-nav-list {
+.main-footer__main-nav-list {
     display: flex;
 
     margin: 0;
@@ -918,31 +918,31 @@ a {
     list-style: none;
 }
 
-.footer-nav__main-nav-item {
+.main-footer__main-nav-item {
     margin-left: 59px;
 }
 
-.footer-nav__main-nav-item a {
+.main-footer__main-nav-item a {
     font-size: 18px;
     color: #f1f5f7;
 }
 
-.footer-nav__main-nav-item a:hover {
+.main-footer__main-nav-item a:hover {
     text-decoration: underline;
 }
 
-.footer-nav__main-nav-item a:active,
-.footer-nav__main-nav-item a:focus {
+.main-footer__main-nav-item a:active,
+.main-footer__main-nav-item a:focus {
     color: rgba(255,255,255,0.5);
 }
 
-.footer-nav__catalog-nav {
+.main-footer__catalog-nav {
     display: flex;
 
     padding-bottom: 52px;
 }
 
-.footer-nav__contacts {
+.main-footer__address {
     width: 350px;
     margin-top: 0;
     margin-bottom: 0;
@@ -951,7 +951,7 @@ a {
     line-height: 22px;
 }
 
-.footer-nav__catalog-nav-list {
+.main-footer__catalog-nav-list {
     display: flex;
 
     margin: 0;
@@ -963,40 +963,40 @@ a {
     list-style: none;
 }
 
-.footer-nav__catalog-nav-item {
+.main-footer__catalog-nav-item {
     margin-left: 60px;
 }
 
-.footer-nav__catalog-nav-item a {
+.main-footer__catalog-nav-item a {
     font-size: 18px;
     color: rgb(255, 210, 129);
 }
 
-.footer-nav__catalog-nav-item a:hover {
+.main-footer__catalog-nav-item a:hover {
     text-decoration: underline;
 }
 
-.footer-nav__catalog-nav-item a:active,
-.footer-nav__catalog-nav-item a:focus {
+.main-footer__catalog-nav-item a:active,
+.main-footer__catalog-nav-item a:focus {
     color: rgb(255, 210, 129, 0.5);
 }
 
-.footer-nav__address,
-.footer-nav__phone {
+.main-footer__address,
+.main-footer__phone {
     font-size: 18px;
 }
 
-.footer-nav__phone {
+.main-footer__phone {
     color: #ffffff;
 }
 
-.footer-nav__phone:hover,
-.footer-nav__phone:active,
-.footer-nav__phone:focus {
+.main-footer__phone:hover,
+.main-footer__phone:active,
+.main-footer__phone:focus {
     color: rgba(255,255,255,0.5);
 }
 
-.footer-contacts {
+.main-footer__contacts {
     padding-bottom: 32px;
     background-color: #33445b;
     color: #ffffff;
@@ -1004,11 +1004,11 @@ a {
     font-family: Cuprum, Arial, sans-serif;
 }
 
-.footer-contacts__main {
+.main-footer__main {
     display: flex;
 }
 
-.footer-contacts__owner-copyright {
+.main-footer__owner-copyright {
     width: 390px;
     margin: 0;
     padding-left: 1px;
@@ -1017,7 +1017,7 @@ a {
     font-size: 16px;
 }
 
-.footer-contacts__social-list {
+.main-footer__social-list {
     margin: 0;
     padding-left: 0;
     padding-top: 34px;
@@ -1027,7 +1027,7 @@ a {
     font-size: 0;
 }
 
-.footer-contacts__social-icon {
+.main-footer__social-icon {
     display: inline-block;
 
     height: 42px;
@@ -1037,7 +1037,7 @@ a {
 
 }
 
-.footer-contacts__social-icon a {
+.main-footer__social-icon a {
     display: block;
     height: 42px;
 
@@ -1048,70 +1048,70 @@ a {
     background-position: 50% 50%;
 }
 
-.footer-contacts__social-icon a:hover {
+.main-footer__social-icon a:hover {
     background-color: #ed3543;
     /* cursor: pointer; */
 }
 
-.footer-contacts__social-icon a:focus,
-.footer-contacts__social-icon a:active {
+.main-footer__social-icon a:focus,
+.main-footer__social-icon a:active {
     background-color: #ed3543;
     cursor: pointer;
 }
 
 /* TODO: Как показать ссылку? */
-.footer-contacts__social-icon a::before {
+.main-footer__social-icon a::before {
     content: " ";
 }
 
-.footer-contacts__social-icon--vkontakte a {
+.main-footer__social-icon--vkontakte a {
     background-image: url("../img/icon-vk.svg");
 }
 
-.footer-contacts__social-icon--facebook a {
+.main-footer__social-icon--facebook a {
     background-image: url("../img/icon-fb.svg");
 }
 
-.footer-contacts__social-icon--instagram a {
+.main-footer__social-icon--instagram a {
     background-image: url("../img/icon-insta.svg");
 }
 
-.footer-contacts__feedback {
+.main-footer__feedback {
     width: 160px;
     padding-top: 36px;
 }
 
-.footer-contacts__dev-copyright {
+.main-footer__dev-copyright {
     box-sizing: border-box;
     width: 140px;
     padding-left: 29px;
     padding-top: 36px;
 }
 
-.footer-contacts__feedback,
-.footer-contacts__dev-copyright {
+.main-footer__feedback,
+.main-footer__dev-copyright {
     font-size: 16px;
 }
 
-.footer-contacts__feedback-text,
-.footer-contacts__dev-copyright-text {
+.main-footer__feedback-text,
+.main-footer__dev-copyright-text {
     color: #ffffff;
 }
 
-.footer-contacts__feedback-link,
-.footer-contacts__dev-copyright-link {
+.main-footer__feedback-link,
+.main-footer__dev-copyright-link {
     color: #ffd180;
 }
 
-.footer-contacts__feedback-link:hover,
-.footer-contacts__dev-copyright-link:hover {
+.main-footer__feedback-link:hover,
+.main-footer__dev-copyright-link:hover {
     text-decoration: underline;
 }
 
-.footer-contacts__feedback-link:active,
-.footer-contacts__feedback-link:focus,
-.footer-contacts__dev-copyright-link:active,
-.footer-contacts__dev-copyright-link:focus {
+.main-footer__feedback-link:active,
+.main-footer__feedback-link:focus,
+.main-footer__dev-copyright-link:active,
+.main-footer__dev-copyright-link:focus {
     color: #ef3341;
 }
 
