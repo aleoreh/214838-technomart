@@ -82,47 +82,43 @@
             <div class="main__catalog-choice">
                 <section class="main-filter">
                     <h2 class="visually-hidden">Основной фильтр</h2>
-                    <b class="main-filter__title">Фильтр</b>
+                    <b class="main-filter__title">Фильтр:</b>
                     <form class="main-filter__form" method="POST" action="http://example.com">
-                        <div class="main-filter__section">
-                            <h3 class="main-filter__title">Цена</h3>
-                            <span>[Ползунок]</span>
-                        </div>
                         <fieldset class="main-filter__section">
-                            <legend class="main-filter__title">Производители</legend>
+                            <h3 class="main-filter__section-title">Производители:</h3>
                             <ul class="main-filter__list">
-                                <li class="main-filter__item">
-                                    <input type="checkbox" class="main-filter__checkbox main-filter__checkbox--checked" id="filter-bosch" name="bosch" checked/>
-                                    <label for="filter-bosch">Bosch</label>
+                                <li class="main-filter__checkbox main-filter__checkbox--checked">
+                                    <input type="checkbox" class="visually-hidden" id="filter-bosch" name="bosch" checked/>
+                                    <label class="main-filter__checkbox-label" for="filter-bosch">Bosch</label>
                                 </li>
-                                <li class="main-filter__item">
-                                    <input type="checkbox" class="main-filter__checkbox" id="filter-interskol" name="interskol"/>
-                                    <label for="filter-interskol">Интерскол</label>
+                                <li class="main-filter__checkbox">
+                                    <input type="checkbox" class="visually-hidden" id="filter-interskol" name="interskol"/>
+                                    <label class="main-filter__checkbox-label" for="filter-interskol">Интерскол</label>
                                 </li>
-                                <li class="main-filter__item">
-                                    <input type="checkbox" class="main-filter__checkbox__checkbox--checked" id="filter-makita" name="makita" checked/>
-                                    <label for="filter-makita">Makita</label>
+                                <li class="main-filter__checkbox main-filter__checkbox--checked">
+                                    <input type="checkbox" class="visually-hidden" id="filter-makita" name="makita" checked/>
+                                    <label class="main-filter__checkbox-label" for="filter-makita">Makita</label>
                                 </li>
-                                <li class="main-filter__item">
-                                    <input type="checkbox" class="main-filter__checkbox" id="filter-dewalt" name="dewalt"/>
-                                    <label for="filter-dewalt">Dewalt</label>
+                                <li class="main-filter__checkbox">
+                                    <input type="checkbox" class="visually-hidden" id="filter-dewalt" name="dewalt"/>
+                                    <label class="main-filter__checkbox-label" for="filter-dewalt">Dewalt</label>
                                 </li>
-                                <li class="main-filter__item">
-                                    <input type="checkbox" class="main-filter__checkbox" id="filter-hitachi" name="hitachi"/>
-                                    <label for="filter-hitachi">Hitachi</label>
+                                <li class="main-filter__checkbox">
+                                    <input type="checkbox" class="visually-hidden" id="filter-hitachi" name="hitachi"/>
+                                    <label class="main-filter__checkbox-label" for="filter-hitachi">Hitachi</label>
                                 </li>
                             </ul>
                         </fieldset>
                         <fieldset class="main-filter__section">
-                            <h3 class="main-filter__title">Питание</h3>
+                            <h3 class="main-filter__section-title">Питание:</h3>
                             <ul class="main-filter__list">
-                                <li class="main-filter__item">
-                                    <input type="radio" class="main-filter__radio" id="filter-accum" name="main-filter-radio"/>
-                                    <label for="filter-accum">Аккумуляторные</label>
+                                <li class="main-filter__radio main-filter__radio--checked">
+                                    <input type="radio" class="visually-hidden" id="filter-accum" name="main-filter-radio"/>
+                                    <label class="main-filter__radio-label" for="filter-accum">Аккумуляторные</label>
                                 </li>
-                                <li class="main-filter__item">
-                                    <input type="radio" class="main-filter__radio" id="filter-network" name="main-filter-radio"/>
-                                    <label for="filter-network">Сетевые</label>
+                                <li class="main-filter__radio">
+                                    <input type="radio" class="visually-hidden" id="filter-network" name="main-filter-radio"/>
+                                    <label class="main-filter__radio-label" for="filter-network">Сетевые</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -138,16 +134,16 @@
                     <ul class="catalog__list">
                         <li class="catalog__item">
                             <section class="goods-card">
-                                <h3 class="visually-hidden">Перфоратор Bosch BFG 9000</h3>
+                                <h3 class="visually-hidden">Перфоратор Bosch BFG 3000</h3>
                                 <div class="goods-card__image">
-                                    <img src="img/snippet-18927.jpg" alt="Перфоратор Bosch BFG 9000" width="127" height="112"/>
+                                    <img src="img/snippet-18927.jpg" alt="Перфоратор Bosch BFG 3000" width="127" height="112"/>
                                 </div>
                                 <div class="goods-card__actions">
-                                    <button class="goods-card__button goods-card__button--submit">Купить</button>
-                                    <button class="goods-card__button goods-card__button--bookmark">В закладки</button>
+                                    <button type="button" class="goods-card__button goods-card__button--submit">Купить</button>
+                                    <button type="button" class="goods-card__button goods-card__button--bookmark">В закладки</button>
                                 </div>
                                 <a class="goods-card__link" href="#">
-                                    Перфоратор Bosch BFG 9000<br/>
+                                    Перфоратор BOSCH<br/>
                                     BFG 9000
                                 </a>
                                 <p class="goods-card__price goods-card__price--old">22500</p>
@@ -161,11 +157,11 @@
                                     <img src="img/snippet-945.jpg" alt="Перфоратор Bosch BFG 3000" width="144" height="128"/>
                                 </div>
                                 <div class="goods-card__actions">
-                                    <button class="goods-card__button goods-card__button--submit">Купить</button>
-                                    <button class="goods-card__button goods-card__button--bookmark">В закладки</button>
+                                    <button type="button" class="goods-card__button goods-card__button--submit">Купить</button>
+                                    <button type="button" class="goods-card__button goods-card__button--bookmark">В закладки</button>
                                 </div>
                                 <a class="goods-card__link" href="#">
-                                    Перфоратор Bosch BFG 3000<br/>
+                                    Перфоратор BOSCH<br/>
                                     BFG 3000
                                 </a>
                                 <p class="goods-card__price goods-card__price--old">22500</p>
@@ -180,11 +176,11 @@
                                     <img src="img/snippet-18927.jpg" alt="Перфоратор Bosch BFG 6000" width="127" height="112"/>
                                 </div>
                                 <div class="goods-card__actions">
-                                    <button class="goods-card__button goods-card__button--submit">Купить</button>
-                                    <button class="goods-card__button goods-card__button--bookmark">В закладки</button>
+                                    <button type="button" class="goods-card__button goods-card__button--submit">Купить</button>
+                                    <button type="button" class="goods-card__button goods-card__button--bookmark">В закладки</button>
                                 </div>
                                 <a class="goods-card__link" href="#">
-                                    Перфоратор Bosch BFG 6000<br/>
+                                    Перфоратор BOSCH<br/>
                                     BFG 6000
                                 </a>
                                 <p class="goods-card__price goods-card__price--old">22500</p>
@@ -198,11 +194,11 @@
                                     <img src="img/snippet-945.jpg" alt="Перфоратор Bosch BFG 3000" width="144" height="128"/>
                                 </div>
                                 <div class="goods-card__actions">
-                                    <button class="goods-card__button goods-card__button--submit">Купить</button>
-                                    <button class="goods-card__button goods-card__button--bookmark">В закладки</button>
+                                    <button type="button" class="goods-card__button goods-card__button--submit">Купить</button>
+                                    <button type="button" class="goods-card__button goods-card__button--bookmark">В закладки</button>
                                 </div>
                                 <a class="goods-card__link" href="#">
-                                    Перфоратор Bosch BFG 3000<br/>
+                                    Перфоратор BOSCH<br/>
                                     BFG 3000
                                 </a>
                                 <p class="goods-card__price goods-card__price--old">22500</p>

@@ -32,6 +32,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     width: 940px;
     margin: 0 auto;
@@ -219,23 +224,27 @@ a {
 }
 
 .main-header__link--bookmarks {
-    background-image: url("../img/icon-bookmark-transparent.svg");
+    background-image: url("../img/icon-bookmark.svg");
     background-repeat: no-repeat;
     background-position: 18px 12px;
 }
 
 .main-header__link--bookmarks:hover {
-    background-image: url("../img/icon-bookmark.svg");
+    background-image: url("../img/icon-bookmark-hover.svg");
 }
 
 .main-header__link--cart {
-    background-image: url("../img/icon-cart-transparent.svg");
+    background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
     background-position: 18px 12px;
 }
 
+.main-header__link--cart.main-header__link--full {
+    background-image: url("../img/icon-cart-full.svg");
+}
+
 .main-header__link--cart:hover {
-    background-image: url("../img/icon-cart.svg");
+    background-image: url("../img/icon-cart-hover.svg");
 }
 
 .main-header__link--order {
@@ -282,7 +291,11 @@ a {
 
     font-size: 13px;
     text-transform: uppercase;
-    color: #c1c6ce;
+    color: #000000;
+}
+
+.breadcrumbs__item a {
+    color: #000000;
 }
 
 .breadcrumbs__item--home {
@@ -359,7 +372,7 @@ a {
 .main-header__account-action a {
     display: block;
 
-    height: 45px;
+    /* height: 45px; */
     margin-left: 10px;
     padding-right: 24px;
     padding-left: 24px;
@@ -483,6 +496,7 @@ a {
     padding: 0;
     margin: 0;
 
+    flex-wrap: wrap;
     justify-content: flex-start;
 
     list-style: none;
@@ -582,9 +596,16 @@ a {
 }
 
 .main__title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-top: 1px;
+    padding-left: 28px;
+    line-height: 90px;
+
     background-color: #f2f6f8;
     font-family: Cuprum, Arial, sans-serif;
     font-size: 30px;
+    font-weight: normal;
     text-transform: uppercase;
     color: #32425c;
 }
@@ -598,26 +619,137 @@ a {
     margin-right: 20px;
 }
 
+.main-filter__section {
+    padding: 0;
+    border: none;
+
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 23px;
+}
+
+.main-filter__section:last-of-type {
+    margin-bottom: 80px;
+}
+
+.main-filter__form {
+}
+
 .main-filter__title {
-    font-size: 17px;
+    display: block;
+
+    margin-bottom: 16px;
+    padding-left: 18px;
+    line-height: 35px;
+
+    background-color: #f7f3ec;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.main-filter__section-title {
+    margin: 0;
+    padding-top: 22px;
+
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
+    font-size: 17px;
     text-transform: uppercase;
 }
 
 .main-filter__list {
+    margin: 0;
+    padding: 0;
+
+    padding-top: 20px;
+
     list-style: none;
 }
 
 /* TODO: Разобраться, как стилизовать hover и active */
-.main-filter__item {
+.main-filter__checkbox,
+.main-filter__radio {
+    position: relative;
+
+    margin-bottom: 23px;
+    padding-left: 32px;
+
     font-size: 15px;
     text-transform: uppercase;
 }
 
+.main-filter__checkbox:last-child,
+.main-filter__radio:last-child {
+    margin-bottom: 0;
+}
+
+.main-filter__checkbox-label::before {
+    content: "";
+
+    position: absolute;
+
+    width: 27px;
+    height: 23px;
+    left: -5px;
+    top: -3px;
+
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.main-filter__checkbox-label:hover::before {
+    background-image: url("../img/checkbox-off-hover.svg");
+}
+
+.main-filter__checkbox--checked  .main-filter__checkbox-label::before {
+    left: -3px;
+
+    background-image: url("../img/checkbox-on.svg");
+}
+
+.main-filter__checkbox--checked:hover  .main-filter__checkbox-label::before {
+    background-image: url("../img/checkbox-on-hover.svg");
+}
+
+.main-filter__radio-label::before {
+    content: "";
+    position: absolute;
+
+    width: 27px;
+    height: 26px;
+    left: -3px;
+    top: -4px;
+
+    background-image: url("../img/radio-off.svg");
+    background-repeat: no-repeat;
+}
+
+.main-filter__radio-label:hover::before {
+    background-image: url("../img/radio-off-hover.svg");
+}
+
+.main-filter__radio--checked .main-filter__radio-label::before {
+    left: -3px;
+
+    background-image: url("../img/radio-on.svg");
+}
+
+.main-filter__radio--checked:hover .main-filter__radio-label::before {
+    background-image: url("../img/radio-on-hover.svg");
+}
+
 .main-filter__submit {
+    padding-left: 38px;
+    padding-right: 38px;
+
     background-color: transparent;
     border: 1px solid #e6e6e6;
-    font-weight: 13px;
+    line-height: 36px;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -655,17 +787,66 @@ a {
 }
 
 .catalog__item {
+    position: relative;
+
     width: 220px;
     border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+}
+
+.catalog__item--new::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/new-flag.png");
+    background-repeat: no-repeat;
+}
+
+.goods-card {
+    display: flex;
+
+    padding-top: 27px;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.goods-card:hover .goods-card__image {
+    display: none;
+}
+
+.goods-card:hover .goods-card__actions {
+    display: block;
+}
+
+.goods-card__image {
+    height: 150px;
+    margin-left: -14px;
+}
+
+.goods-card__actions {
+    display: none;
+    height: 150px;              /* такая же, как .goods-card__image*/
 }
 
 .goods-card__link {
+    margin-bottom: 10px;
+
     font-size: 18px;
     font-weight: bold;
     color: #000000;
+    text-align: center;
 }
 
 .goods-card__price {
+    margin: 0;
+    margin-bottom: 4px;
+
     font-size: 17px;
     font-weight: bold;
 }
@@ -681,44 +862,66 @@ a {
 }
 
 .goods-card__price--new {
-    background-color: #ef3341;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+    background-image: url("../img/red-button.svg");
     color: #ffffff;
 }
 
 .goods-card__button {
+    display: block;
+
+    margin-left: 2px;
+    margin-bottom: 8px;
+    width: 135px;
     border: 3px solid;
+    padding-top: 10px;
+    padding-bottom: 8px;
+
     font-family: Cuprum, Arial, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     color: #ffffff;
 }
 
+.goods-card__button:hover {
+    cursor: pointer;
+}
+
 .goods-card__button--submit {
+    padding-left: 12px;
+
     border-color: #63a83c;
-    padding-left: 49px;
     background-color: #63a83c;
-    /* DONE: Будет рассмотрено позже TODO: Как изменить цвет или прозрачность? */
-    background-image: url("../img/icon-cart.svg");
+    background-image: url("../img/icon-cart-submit.svg");
     background-repeat: no-repeat;
+    background-position: 10px 10px;
 }
 
 .goods-card__button--submit:hover {
     border-color: #5fbc29;
     background-color: #5fbc29;
+    background-image: url("../img/icon-cart-hover.svg");
 }
 
 .goods-card__button--submit:active,
 .goods-card__button--submit:focus {
     border-color: #508631;
     background-color: #508631;
+    background-image: url("../img/icon-cart-submit.svg");
 }
 
 .goods-card__button--bookmark {
     border-color: #63a83c;
-    padding-left: 49px;
+    padding-left: 12px;
+
     color: #32425c;
     background-color: #ffffff;
-    /* DONE: Будет рассмотрено позже TODO: Как изменить цвет или прозрачность? */
     background-repeat: no-repeat;
 }
 
