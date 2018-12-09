@@ -12,13 +12,13 @@
     <body>
         <header class="main-header"> <!-- light blue background -->
             <div class="main-header__top"> <!-- dark blue background -->
-                <section class="main-header__top-actions container"> <!-- logo, search, actions box -->
+                <div class="main-header__top-actions container"> <!-- logo, search, actions box -->
                     <a class="main-header__logo main-header__logo--static">Техномарт</a>
                     <form class="main-header__search" method="POST" action="http://example.com/search">
                         <button type="submit" class="main-header__search-submit visually-hidden">Искать</button>
                         <input type="text" class="main-header__search-input" placeholder="Поиск:" aria-label="Ввод текста для поиска"/>
                     </form>
-                    <section class="main-header__action-links">
+                    <div class="main-header__action-links">
                         <a href="bookmarks" class="main-header__link main-header__link--bookmarks">
                             Закладки:
                             <span class="main-header__action-info">0</span>
@@ -30,8 +30,8 @@
                         <a href="#" class="main-header__link main-header__link--order">
                             Оформить заказ
                         </a>
-                    </section>
-                </section>
+                    </div>
+                </div>
             </div>
             <div class="main-header__middle container"> <!-- title, contacts, login; Нет общей темы, поэтому - div -->
                 <p class="main-header__title">Интернет-магазин<br/>строительных материалов<br/>и инструментов для ремонта</p>
@@ -40,6 +40,7 @@
                     <span class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                 </p>
                 <section class="main-header__account">
+                    <h2 class="visually-hidden">Управление аккаунтом</h2>
                     <ul class="main-header__account-actions main-header__account-actions--logged-out">
                         <li class="main-header__account-action main-header__account-action--login">
                             <a class="main-header__account-action-button" href="#" aria-label="Войти в систему">Войти</a>
@@ -98,7 +99,7 @@
         </main>
         <footer class="main-footer">
             <div class="main-footer__nav">
-                <section class="main-footer__main-nav container">
+                <div class="main-footer__main-nav container">
                     <a class="main-footer__logo logo" href="index.html">Техномарт</a>
                     <ul class="main-footer__main-nav-list">
                         <li class="main-footer__main-nav-item"><a href="#">Компания</a></li>
@@ -107,8 +108,8 @@
                         <li class="main-footer__main-nav-item"><a href="#">Доставка</a></li>
                         <li class="main-footer__main-nav-item"><a href="#">Контакты</a></li>
                     </ul>
-                </section>
-                <section class="main-footer__catalog-nav container">
+                </div>
+                <div class="main-footer__catalog-nav container">
                     <p class="main-footer__address">
                         <span class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span><br/>
                         <a class="main-footer__phone" href="tel:+7(812)5550555" aria-label="Позвонить">+7 (812) 555-05-55</a>
@@ -119,10 +120,10 @@
                         <li class="main-footer__catalog-nav-item"><a href="#">Инструмент</a></li>
                         <li class="main-footer__catalog-nav-item"><a href="#">Спецпредложения</a></li>
                     </ul>
-                </section>
+                </div>
             </div>
             <div class="main-footer__contacts">
-                <section class="main-footer__main container">
+                <div class="main-footer__main container">
                     <p class="main-footer__owner-copyright">
                         © 2010–2017 Компания «Техномарт»<br/> Все права защищены
                     </p>
@@ -145,7 +146,7 @@
                         <span class="main-footer__dev-copyright-text">Разработано &mdash;</span>
                         <a class="main-footer__dev-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                     </div>
-                </section>
+                </div>
             </div>
         </footer>
         <section class="modal modal-feedback">
