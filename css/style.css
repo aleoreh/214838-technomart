@@ -1210,7 +1210,7 @@ img {
 
 .main-footer__catalog-nav-item a:active,
 .main-footer__catalog-nav-item a:focus {
-    color: rgb(255, 210, 129, 0.5);
+    color: rgba(255, 210, 129, 0.5);
 }
 
 .main-footer__address,
@@ -1420,7 +1420,7 @@ img {
 
 .main-footer-groups-nav__item a:active,
 .main-footer-groups-nav__item a:focus {
-    color: rgb(255, 210, 129, 0.5);
+    color: rgba(255, 210, 129, 0.5);
 }
 
 .modal {
