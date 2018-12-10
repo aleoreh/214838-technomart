@@ -1586,3 +1586,101 @@ img {
 
     cursor: pointer;
 }
+
+/* modal-card-added */
+
+.modal-cart-added {
+    margin-bottom: 30px;
+
+    position: relative;
+    display: block;
+
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 -8px #ff5358, 0 20px 40px #000000;
+}
+
+.modal-cart-added__title {
+    margin: 0;
+
+    padding-left: 182px;
+    padding-top: 64px;
+    padding-bottom: 62px;
+
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+
+    background-image: url("../img/check-mark.png");
+    background-repeat: no-repeat;
+    background-position: 81px 50px;
+}
+
+.modal-cart-added__actions {
+    display: flex;
+
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 37px;
+    padding-bottom: 37px;
+
+    justify-content: space-between;
+
+    background-color: #f1f1f1;
+}
+
+.modal-cart-added__button {
+    box-sizing: border-box;
+
+    border: none;
+
+    width: 220px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.modal-cart-added__button--submit:hover {
+    cursor: pointer;
+    background-color: #ca2c37;
+}
+
+.modal-cart-added__button--submit:active,
+.modal-cart-added__button--submit:focus {
+    background-color: #ba2732;
+}
+
+.modal-cart-added__button--continue:hover {
+    cursor: pointer;
+}
+
+.modal-cart-added__button--submit {
+    background-color: #ee3643;
+    color: #ffffff;
+}
+
+.modal-cart-added__button--continue {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.modal-cart-added__close {
+    position: absolute;
+    display: block;
+
+    border: none;
+    padding: 0;
+    top: 9px;
+    right: 9px;
+    width: 21px;
+    height: 21px;
+
+    background-image: url("../img/icon-close.svg");
+    background-color: rgba(255,255,255,0);
+
+    cursor: pointer;
+}
