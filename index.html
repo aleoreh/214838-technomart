@@ -155,19 +155,25 @@
                 <span class="visually-hidden">Закрыть окно обратной связи</span>
             </button>
             <form class="modal-feedback__form">
-                <div class="modal-feedback__inputs">
-                    <label for="feedback-name" class="modal-feedback__label">Ваше имя</label>
-                    <input id="feedback-name" name="name" type="text" class="modal-feedback__text" placeholder="Имя Фамилия"/>
-                    <label for="feedback-email" class="modal-feedback__label">Ваш e-mail</label>
-                    <input id="feedback-email" name="email" type="email" class="modal-feedback__text" placeholder="email@example.com"/>
-                    <label for="feedback-text" class="modal-feedback__label">Текст письма</label>
-                    <textarea id="feedback-text" name="text" class="modal-feedback__text" placeholder="В свободной форме"></textarea>
+                <div class="modal-feedback__user">
+                    <label class="modal-feedback__label">
+                        <p class="modal-feedback__label-text">Ваше имя:</p>
+                        <input name="name" type="text" class="modal-feedback__text" placeholder="Имя Фамилия"/>
+                    </label>
+                    <label class="modal-feedback__label">
+                        <p class="modal-feedback__label-text">Ваш e-mail:</p>
+                        <input name="email" type="email" class="modal-feedback__text" placeholder="email@example.com"/>
+                    </label>
                 </div>
-                <ul class="modal-feedback__actions">
-                    <li class="modal-feedback__action">
-                        <button class="modal-feedback__button" type="button">Отправить</button>
-                    </li>
-                </ul>
+                <div class="modal-feedback__message">
+                    <label for="feedback-text" class="modal-feedback__label">
+                        <p class="modal-feedback__label-text">Текст письма:</p>
+                        <textarea id="feedback-text" name="text" class="modal-feedback__text" placeholder="В свободной форме"></textarea>
+                    </label>
+                </div>
+                <div class="modal-feedback__actions">
+                    <button class="modal-feedback__button" type="button">Отправить</button>
+                </div>
             </form>
         </section>
         <section class="modal modal-google-map">
