@@ -1439,7 +1439,7 @@ img {
 
 .modal-feedback {
     position: relative;
-    /* display: block; */
+    display: block;
 
     width: 620px;
     margin-left: auto;
