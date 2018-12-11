@@ -10,13 +10,13 @@
     </head>
 
     <body>
-        <header class="main-header"> <!-- light blue background -->
-            <div class="main-header__top"> <!-- dark blue background -->
+        <header class="main-header">
+            <div class="main-header__top">
                 <div class="main-header__top-actions container">
                     <a class="main-header__logo" href="index.html" aria-label="На главную">Техномарт</a>
                     <form class="main-header__search" method="POST" action="http://example.com/search">
-                        <button type="submit" class="main-header__search-submit visually-hidden">Искать</button>
                         <input type="text" class="main-header__search-input" placeholder="Поиск:" aria-label="Ввод текста для поиска"/>
+                        <button type="submit" class="main-header__search-submit">Искать</button>
                     </form>
                     <div class="main-header__action-links">
                         <a href="bookmarks" class="main-header__link main-header__link--bookmarks">
@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-header__middle container"> <!-- title, contacts, login; Нет общей темы, поэтому - div -->
+            <div class="main-header__middle container">
                 <p class="main-header__title">Интернет-магазин<br/>строительных материалов<br/>и инструментов для ремонта</p>
                 <p class="main-header__contacts">
                     <a class="main-header__phone" href="tel:+7(812)5550555" aria-label="Позвонить">+7 (812) 555-05-55</a>
@@ -42,12 +42,6 @@
                 <section class="main-header__account">
                     <h2 class="visually-hidden">Управоение аккаунтом</h2>
                     <ul class="main-header__account-actions main-header__account-actions--logged-in">
-                        <li class="main-header__account-action main-header__account-action--login">
-                            <a class="main-header__account-action-button" href="#" aria-label="Войти в систему">Войти в систему</a>
-                        </li>
-                        <li class="main-header__account-action main-header__account-action--register">
-                            <a class="main-header__account-action-button" href="#" aria-label="Регистрация">Регистрация</a>
-                        </li>
                         <li class="main-header__account-action main-header__account-action--logout">
                             <a class="main-header__account-action-button" href="#" aria-label="Выйти из системы">
                                 <span class="main-header__account-action-text">Равшан Джамшутович</span>
@@ -207,7 +201,6 @@
 
                             </section>
                         </li>
-                        <!-- TODO: добавить остальные элементы после проверки -->
                     </ul>
                 </section>
             </div>
