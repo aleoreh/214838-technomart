@@ -265,10 +265,7 @@ img {
 
     position: absolute;
 
-    width: 15px;
-    height: 16px;
     top: 50%;
-    left: 17px;
     margin-top: -8px;
 
     background-repeat: no-repeat;
@@ -276,6 +273,10 @@ img {
 }
 
 .main-header__link--bookmarks::before {
+    width: 14px;
+    height: 16px;
+    left: 17px;
+
     background-image: url("../img/icon-bookmark.svg");
 }
 
@@ -284,6 +285,10 @@ img {
 }
 
 .main-header__link--cart::before {
+    width: 15px;
+    height: 15px;
+    left: 18px;
+
     background-image: url("../img/icon-cart.svg");
 }
 
