@@ -55,7 +55,7 @@ img {
 }
 
 .main-header__top {
-    margin-bottom: 46px;
+    margin-bottom: 48px;
 
     background-color: #33445a;
     color: #ffffff;
@@ -491,7 +491,7 @@ img {
     top: 50%;
     width: 20px;
     height: 18px;
-    margin-top: -11px;
+    margin-top: -9px;
 
     background-image: url("../img/icon-user.svg");
     background-repeat: no-repeat;
@@ -518,7 +518,7 @@ img {
     top: 50%;
     width: 21px;
     height: 17px;
-    margin-top: -10px;
+    margin-top: -9px;
 
     background-image: url("../img/icon-logout.svg");
     background-repeat: no-repeat;
