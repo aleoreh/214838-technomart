@@ -272,7 +272,7 @@ img {
     height: 16px;
     top: 50%;
     left: 17px;
-    margin-top: -11px;
+    margin-top: -8px;
 
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -454,8 +454,9 @@ img {
 
     width: 20px;
     height: 17px;
-    top: 11px;
+    top: 50%;
     left: 12px;
+    margin-top: -9px;
 
     background-image: url("../img/icon-login.svg");
     background-repeat: no-repeat;
