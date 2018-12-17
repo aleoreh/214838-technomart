@@ -120,17 +120,14 @@ img {
 .main-header__search-input {
     display: block;
 
-    width: 220px;
     border: 0;
+    width: 220px;
     padding-left: 49px;
 
     color: #ffffff;
     font-size: 17px;
-    line-height: 42px;
+    line-height: 40px;          /* input's padding is 1px*/
     background-color: rgba(255, 255, 255, 0);
-    /* background-image: url("../img/icon-search-transparent.svg"); */
-    /* background-position: 17px 50%; */
-    /* background-repeat: no-repeat; */
 }
 
 .main-header__search-input:hover {
