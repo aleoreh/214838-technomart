@@ -1515,17 +1515,26 @@ img {
     display: none;
 }
 
+.modal-show {
+    display: block;
+    top: 0;
+    left: 50%;
+
+    animation: condense 0.4s;
+}
+
 /* modal-feedback */
 
 .modal-feedback {
-    position: relative;
-    display: block;
+    position: fixed;
 
     width: 620px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -310px;
+    margin-top: 20px;
     padding-top: 47px;
+
     box-shadow: 0 -8px #ff5358, 0 20px 40px #000000;
+    background-color: #ffffff;
 }
 
 .modal-feedback__text {
@@ -1646,7 +1655,6 @@ img {
 
 .modal-google-map {
     position: relative;
-    display: block;
 
     width: 940px;
     margin-left: auto;
@@ -1768,4 +1776,26 @@ img {
     background-color: rgba(255,255,255,0);
 
     cursor: pointer;
+}
+
+/* Анимация */
+
+@keyframes condense {
+    0% {
+        filter: blur(10px);
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    80% {
+        filter: blur(1px);
+        opacity: 0.8;
+        transform: translateY(-5px);
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
