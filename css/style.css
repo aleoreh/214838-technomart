@@ -135,6 +135,18 @@ img {
     background-color: #212a3a;
 }
 
+.main-header__search-input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+.main-header__search-input:focus::-moz-placeholder {
+    color: transparent
+}
+
+.main-header__search-input:focus::-ms-input-placeholder {
+    color: transparent
+}
+
 .main-header__search-input:focus,
 .main-header__search-input:active {
     color: #000000;
