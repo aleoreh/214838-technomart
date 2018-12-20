@@ -288,6 +288,11 @@ img {
     background-image: url("../img/icon-bookmark-hover.svg");
 }
 
+.main-header__link--bookmarks:active::before,
+.main-header__link--bookmarks:focus::before {
+    background-image: url("../img/icon-bookmark.svg");
+}
+
 .main-header__link--cart::before {
     width: 15px;
     height: 15px;
@@ -302,6 +307,11 @@ img {
 
 .main-header__link--cart:hover::before {
     background-image: url("../img/icon-cart-hover.svg");
+}
+
+.main-header__link--cart:active::before,
+.main-header__link--cart:focus::before {
+    background-image: url("../img/icon-cart.svg");
 }
 
 .main-header__link--order {
