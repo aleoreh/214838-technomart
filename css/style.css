@@ -1024,7 +1024,7 @@ img {
     text-decoration-line: line-through;
 }
 
-.goods-card__price--new {
+.goods-card__price {
     margin-top: auto;
     padding-top: 15px;
     padding-right: 40px;
@@ -1035,6 +1035,8 @@ img {
     background-image: url('../img/red-button.svg');
     background-repeat: no-repeat;
     background-position: 5px 50%;
+
+    cursor: default;
 }
 
 .goods-card__button {
