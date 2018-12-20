@@ -937,6 +937,8 @@ img {
     margin-bottom: 20px;
 
     border: 1px solid #e6e6e6;
+
+    justify-content: space-around;
 }
 
 .catalog__item:nth-child(3n) {
