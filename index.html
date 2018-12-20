@@ -15,19 +15,19 @@
                 <div class="main-header__top-actions container">
                     <a class="main-header__logo main-header__logo--static">Техномарт</a>
                     <form class="main-header__search" method="POST" action="http://example.com/search">
-                        <input type="text" class="main-header__search-input" placeholder="Поиск:" aria-label="Ввод текста для поиска"/>
-                        <button type="submit" class="main-header__search-submit">Искать</button>
+                        <input class="main-header__search-input" type="text" placeholder="Поиск:" aria-label="Ввод текста для поиска"/>
+                        <button class="main-header__search-submit" type="submit">Искать</button>
                     </form>
                     <div class="main-header__action-links">
-                        <a href="bookmarks" class="main-header__link main-header__link--bookmarks">
+                        <a class="main-header__link main-header__link--bookmarks" href="bookmarks">
                             Закладки:
                             <span class="main-header__action-info">0</span>
                         </a>
-                        <a href="cart" class="main-header__link main-header__link--cart">
+                        <a class="main-header__link main-header__link--cart" href="cart">
                             Корзина:
                             <span class="main-header__action-info">0</span>
                         </a>
-                        <a href="#" class="main-header__link main-header__link--order">
+                        <a class="main-header__link main-header__link--order" href="#">
                             Оформить заказ
                         </a>
                     </div>
@@ -146,24 +146,24 @@
         </footer>
         <section class="modal modal-feedback">
             <h2 class="visually-hidden">Обратная связь</h2>
-            <button type="button" class="modal-feedback__close">
+            <button class="modal-feedback__close" type="button">
                 <span class="visually-hidden">Закрыть окно обратной связи</span>
             </button>
             <form class="modal-feedback__form">
                 <div class="modal-feedback__user">
                     <label class="modal-feedback__label">
                         <span class="modal-feedback__label-text">Ваше имя:</span>
-                        <input name="name" type="text" class="modal-feedback__text" placeholder="Имя Фамилия"/>
+                        <input class="modal-feedback__text" type="text" name="name" placeholder="Имя Фамилия"/>
                     </label>
                     <label class="modal-feedback__label">
                         <span class="modal-feedback__label-text">Ваш e-mail:</span>
-                        <input name="email" type="email" class="modal-feedback__text" placeholder="email@example.com"/>
+                        <input class="modal-feedback__text" type="email" name="email" placeholder="email@example.com"/>
                     </label>
                 </div>
                 <div class="modal-feedback__message">
-                    <label for="feedback-text" class="modal-feedback__label">
+                    <label class="modal-feedback__label">
                         <span class="modal-feedback__label-text">Текст письма:</span>
-                        <textarea id="feedback-text" name="text" class="modal-feedback__text" placeholder="В свободной форме"></textarea>
+                        <textarea class="modal-feedback__text" name="text" placeholder="В свободной форме"></textarea>
                     </label>
                 </div>
                 <div class="modal-feedback__actions">
@@ -173,10 +173,10 @@
         </section>
         <section class="modal modal-google-map">
             <h2 class="visually-hidden">Мы на карте</h2>
-            <button type="button" class="modal-google-map__close">
+            <button class="modal-google-map__close" type="button">
                 <span class="visually-hidden">Закрыть окно карты</span>
             </button>
-            <img src="img/map-big.jpg" class="modal-google-map__img" alt="Схема проезда" width="940"/>
+            <img class="modal-google-map__img" src="img/map-big.jpg" alt="Схема проезда" width="940"/>
         </section>
         <script src="js/index.js"></script>
     </body>
