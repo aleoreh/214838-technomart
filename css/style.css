@@ -1024,7 +1024,7 @@ img {
     text-decoration-line: line-through;
 }
 
-.goods-card__price {
+.goods-card__price--new {
     margin-top: auto;
     padding-top: 15px;
     padding-right: 40px;
