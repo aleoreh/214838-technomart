@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'PT Sans', Arial, sans-serif;
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 14px;
 
     margin: 0;
@@ -374,6 +374,7 @@ img {
 
 .breadcrumbs__item {
     font-size: 13px;
+    font-family: "PT Sans", Arial, sans-serif;
 
     position: relative;
 
@@ -964,6 +965,8 @@ img {
     padding-bottom: 14px;
 
     align-items: center;
+
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .goods-card:hover .goods-card__image {
