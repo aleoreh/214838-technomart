@@ -968,6 +968,8 @@ img {
     height: 150px;
     /* такая же, как .goods-card__image*/
     padding-top: 15px;
+
+    font-family: "Cuprum", Arial, sans-serif;
 }
 
 .goods-card__link {
@@ -1041,29 +1043,51 @@ img {
 }
 
 .goods-card__button--submit {
+    position: relative;
     box-sizing: border-box;
-    padding-left: 12px;
 
     text-align: center;
 
     border-color: #63a83c;
     background-color: #63a83c;
-    background-image: url('../img/icon-cart-submit.svg');
-    background-repeat: no-repeat;
-    background-position: 10px 10px;
 }
 
 .goods-card__button--submit:hover {
     border-color: #5fbc29;
     background-color: #5fbc29;
-    background-image: url('../img/icon-cart-hover.svg');
+}
+
+.goods-card__button--submit:hover path,
+.goods-card__button--submit:hover circle {
+    fill: #ffffff;
 }
 
 .goods-card__button--submit:active,
 .goods-card__button--submit:focus {
     border-color: #508631;
     background-color: #508631;
-    background-image: url('../img/icon-cart-submit.svg');
+}
+
+.goods-card__button--submit:active path,
+.goods-card__button--submit:focus path,
+.goods-card__button--submit:active circle,
+.goods-card__button--submit:focus circle {
+    fill: #ffffff;
+}
+
+.goods-card__button--submit svg {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 11px;
+
+    margin-top: -7px;
+}
+
+.goods-card__button--submit path,
+.goods-card__button--submit circle {
+    fill: #92c178;
 }
 
 .goods-card__button--bookmark {
