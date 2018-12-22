@@ -366,6 +366,7 @@ img {
 
     margin: 0;
     padding: 0;
+    margin-bottom: 20px;
     padding-top: 24px;
 
     list-style: none;
@@ -379,10 +380,7 @@ img {
 
     position: relative;
 
-    display: inline-block;
-
     min-width: 14px;
-    height: 36px;
     margin: 0;
     margin-right: 12px;
     padding: 0;
