@@ -462,45 +462,56 @@ img {
     flex-wrap: wrap;
 }
 
-.main-header__account-action {
+/* .main-header__account-action { */
+/*     position: relative; */
+
+/*     margin-right: 19px; */
+/* } */
+
+/* .main-header__account-action:last-child { */
+/*     margin-right: 0; */
+/* } */
+
+.main-header__account-action a {
     position: relative;
-
-    margin-right: 10px;
-}
-
-.main-header__account-action:last-child {
-    margin-right: 0;
-}
-
-.main-header__account-action-button {
+    box-sizing: border-box;
     font-size: 21px;
-    line-height: 40px;
+    line-height: 44px;
 
     display: block;
     /* height: 45px; */
+    padding-left: 45px;
     padding-right: 24px;
-    padding-left: 24px;
 
     color: #000;
     background-color: #fff;
 }
 
-.main-header__account-action-button:hover {
+.main-header__account-action a:hover {
     color: #ee3643;
 }
 
-.main-header__account-action-button:focus,
-.main-header__account-action-button:active {
+.main-header__account-action a:focus,
+.main-header__account-action a:active {
     color: rgba(0, 0, 0, .5);
 }
 
-.main-header__account-action-button--register {
+.main-header__account-action--register a {
     width: 150px;
+    padding-left: 24px;
+
+    text-align: center;
+}
+
+.main-header__account-action--login {
+    margin-right: 11px;
 }
 
 .main-header__account-action--login a {
-    padding-right: 25px;
+    position: relative;
+
     padding-left: 45px;
+    padding-right: 25px;
 }
 
 .main-header__account-action--login a::before {
@@ -528,14 +539,13 @@ img {
     background-image: url('../img/icon-login.svg');
 }
 
-.main-header__account-action--logout a {
+.main-header__account-action--profile a {
     position: relative;
 
-    padding-right: 67px;
     padding-left: 45px;
 }
 
-.main-header__account-action--logout a::before {
+.main-header__account-action--profile a::before {
     position: absolute;
     top: 50%;
     left: 11px;
@@ -553,13 +563,18 @@ img {
     background-position: 50% 50%;
 }
 
-.main-header__account-action--logout a:hover::before {
+.main-header__account-action--profile a:hover::before {
     background-image: url('../img/icon-user-hover.svg');
 }
 
-.main-header__account-action--logout a:active::before,
-.main-header__account-action--logout a:focus::before {
+.main-header__account-action--profile a:active::before,
+.main-header__account-action--profile a:focus::before {
     background-image: url('../img/icon-user.svg');
+}
+
+.main-header__account-action--logout a {
+    padding-left: 19px;
+    font-size: 0;
 }
 
 .main-header__account-action--logout a::after {
