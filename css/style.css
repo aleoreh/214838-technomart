@@ -21,7 +21,7 @@ body {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
 
-    color: #000;
+    color: #000000;
 }
 
 a {
@@ -52,7 +52,7 @@ img {
 .main-header__top {
     margin-bottom: 48px;
 
-    color: #fff;
+    color: #ffffff;
     background-color: #33445a;
 }
 
@@ -88,7 +88,7 @@ img {
     font-size: 24px;
     text-transform: uppercase;
 
-    color: #fff;
+    color: #ffffff;
     background-color: #ef3341;
 }
 
@@ -121,7 +121,7 @@ img {
     font-size: 17px;
     line-height: 40px;
 
-    color: #fff;
+    color: #ffffff;
     border: 0;
     background-color: rgba(255, 255, 255, 0);
 }
@@ -144,8 +144,8 @@ img {
 
 .main-header__search-input:focus,
 .main-header__search-input:active {
-    color: #000;
-    background-color: #fff;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .main-header__search-submit {
@@ -214,7 +214,7 @@ img {
     font-size: 21px;
 
     color: #ee3643;
-    border: 3px solid #fff;
+    border: 3px solid #ffffff;
 }
 
 .main-header__phone::before {
@@ -256,7 +256,7 @@ img {
     line-height: 41px;
     text-align: center;
 
-    color: #fff;
+    color: #ffffff;
 }
 
 .main-header__link:hover:not(.main-header__link--order):not(.main-header__link--full) {
@@ -341,7 +341,7 @@ img {
 .main-header__link--order {
     padding-left: 0;
 
-    color: #fff;
+    color: #ffffff;
     background-color: #63a63e;
 }
 
@@ -387,8 +387,8 @@ img {
     font-size: 21px;
     line-height: 44px;
 
-    color: #000;
-    background-color: #fff;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .main-header__account-action a:hover {
@@ -528,9 +528,9 @@ img {
 
     content: '';
 
-    border: 1px solid #000;
+    border: 1px solid #000000;
     border-radius: 4px;
-    background-color: #000;
+    background-color: #000000;
 }
 
 .main-header__account-link:last-child {
@@ -561,7 +561,7 @@ img {
 
     text-align: center;
 
-    color: #fff;
+    color: #ffffff;
 }
 
 .main-nav__list {
@@ -572,7 +572,7 @@ img {
 
     list-style: none;
 
-    color: #fff;
+    color: #ffffff;
     background-color: #2e405c;
     box-shadow: 0 3px #263147;
 
@@ -828,11 +828,11 @@ img {
 
     text-transform: uppercase;
 
-    color: #000;
+    color: #000000;
 }
 
 .breadcrumbs__item a {
-    color: #000;
+    color: #000000;
 }
 
 .breadcrumbs__item--home {
@@ -973,7 +973,7 @@ img {
 
     text-align: center;
 
-    color: #000;
+    color: #000000;
 }
 
 .goods-card__price {
@@ -1005,7 +1005,7 @@ img {
     padding-bottom: 15px;
     padding-left: 40px;
 
-    color: #fff;
+    color: #ffffff;
     background-image: url('../img/red-button.svg');
     background-repeat: no-repeat;
     background-position: 5px 50%;
@@ -1027,7 +1027,7 @@ img {
     text-transform: uppercase;
     text-align: center;
 
-    color: #fff;
+    color: #ffffff;
     border: 3px solid;
 }
 
@@ -1088,7 +1088,7 @@ img {
 
     color: #32425c;
     border-color: #63a83c;
-    background-color: #fff;
+    background-color: #ffffff;
     background-repeat: no-repeat;
 }
 
@@ -1122,7 +1122,7 @@ img {
 }
 
 .pagination__item a {
-    color: #000;
+    color: #000000;
     border: 1px solid #bec7cb;
 }
 
@@ -1139,13 +1139,13 @@ img {
 }
 
 .pagination__item--current {
-    color: #fff;
+    color: #ffffff;
     background-color: #ef3341;
 }
 
 .pagination__button {
     border: 1px solid #bec7cb;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 
@@ -1176,7 +1176,7 @@ img {
 }
 
 .about {
-    color: #000;
+    color: #000000;
 }
 
 .about__title {
@@ -1249,7 +1249,7 @@ img {
 
     text-transform: uppercase;
 
-    color: #fff;
+    color: #ffffff;
     background-color: #ef3341;
 }
 
@@ -1264,7 +1264,7 @@ img {
 
 .contacts {
     width: 300px;
-    color: #000;
+    color: #000000;
 }
 
 .contacts__title {
@@ -1296,7 +1296,7 @@ img {
 
     text-transform: uppercase;
 
-    color: #fff;
+    color: #ffffff;
     background-color: #ef3341;
 }
 
@@ -1330,7 +1330,7 @@ img {
 }
 
 .main-footer__top {
-    color: #fff;
+    color: #ffffff;
     background-color: #2e405c;
 }
 
@@ -1352,7 +1352,7 @@ img {
 }
 
 .main-footer__bottom {
-    color: #fff;
+    color: #ffffff;
     background-color: #293449;
 }
 
@@ -1362,7 +1362,7 @@ img {
 }
 
 .main-footer__phone {
-    color: #fff;
+    color: #ffffff;
 }
 
 .main-footer__phone:hover,
@@ -1397,7 +1397,7 @@ img {
 }
 
 .main-footer__nav {
-    color: #fff;
+    color: #ffffff;
     background-color: #3d546e;
 }
 
@@ -1421,7 +1421,7 @@ img {
     text-align: center;
 
     box-shadow: 0 3px #b0202b;
-    color: #fff;
+    color: #ffffff;
     background-color: #ef3341;
 }
 
@@ -1530,7 +1530,7 @@ img {
 }
 
 .main-footer__phone {
-    color: #fff;
+    color: #ffffff;
 }
 
 .main-footer__phone:hover,
@@ -1543,7 +1543,7 @@ img {
     padding-top: 36px;
     padding-bottom: 32px;
 
-    color: #fff;
+    color: #ffffff;
     background-color: #33445b;
 }
 
@@ -1632,7 +1632,7 @@ img {
 
 .main-footer__feedback-text,
 .main-footer__dev-copyright-text {
-    color: #fff;
+    color: #ffffff;
 }
 
 .main-footer__feedback-link,
@@ -1676,8 +1676,8 @@ img {
     margin-left: -310px;
     padding-top: 47px;
 
-    background-color: #fff;
-    box-shadow: 0 -8px #ff5358, 0 20px 40px #000;
+    background-color: #ffffff;
+    box-shadow: 0 -8px #ff5358, 0 20px 40px #000000;
 }
 
 .modal-feedback__text {
@@ -1777,7 +1777,7 @@ img {
 
     text-transform: uppercase;
 
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 3px;
     background-color: #ee3643;
@@ -1804,7 +1804,7 @@ img {
     margin-right: auto;
     margin-left: auto;
 
-    box-shadow: 0 0 16px #000;
+    box-shadow: 0 0 16px #000000;
 }
 
 .modal-google-map__close {
@@ -1836,7 +1836,7 @@ img {
     margin-bottom: 30px;
     margin-left: auto;
 
-    box-shadow: 0 -8px #ff5358, 0 20px 40px #000;
+    box-shadow: 0 -8px #ff5358, 0 20px 40px #000000;
 }
 
 .modal-cart-added__title {
@@ -1882,7 +1882,7 @@ img {
 .modal-cart-added__button--submit {
     text-align: center;
 
-    color: #fff;
+    color: #ffffff;
     background-color: #ee3643;
 }
 
@@ -1902,8 +1902,8 @@ img {
 }
 
 .modal-cart-added__button--continue {
-    color: #000;
-    background-color: #fff;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .modal-cart-added__close {
