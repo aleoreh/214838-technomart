@@ -166,21 +166,21 @@ img {
     cursor: pointer;
 
     border: none;
-    background: url('../img/icon-search-transparent.svg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-color: transparent;
 }
 
-.main-header__search-input:hover+.main-header__search-submit,
-.main-header__search:hover>.main-header__search-submit {
-    background-image: url('../img/icon-search.svg');
+.main-header__search-submit:hover path,
+.main-header__search-input:hover+.main-header__search-submit path {
+    fill: #ffffff;
 }
 
-.main-header__search-input:active+.main-header__search-submit,
-.main-header__search-input:focus+.main-header__search-submit {
-    background-image: url('../img/icon-search-ed3543.svg');
+.main-header__search-submit path,
+.main-header__search-submit:active path,
+.main-header__search-submit:focus path,
+.main-header__search-input:active+.main-header__search-submit path,
+.main-header__search-input:focus+.main-header__search-submit path {
+    fill: #6a7180;
 }
-
 
 /* main-header__title */
 
@@ -282,8 +282,12 @@ img {
     background-color: #ed3543;
 }
 
-.main-header__link--bookmarks::before,
-.main-header__link--cart::before {
+.main-header__link--bookmarks {
+    position: relative;
+}
+
+.main-header__link--bookmarks svg,
+.main-header__link--cart svg {
     position: absolute;
     top: 50%;
 
@@ -295,44 +299,46 @@ img {
     background-position: 50% 50%;
 }
 
-.main-header__link--bookmarks::before {
+.main-header__link--bookmarks svg {
     left: 17px;
 
     width: 14px;
     height: 16px;
-
-    background-image: url('../img/icon-bookmark.svg');
 }
 
-.main-header__link--bookmarks:hover::before {
-    background-image: url('../img/icon-bookmark-hover.svg');
+.main-header__link--bookmarks:hover path {
+    fill: #ffffff;
 }
 
-.main-header__link--bookmarks:active::before,
-.main-header__link--bookmarks:focus::before {
-    background-image: url('../img/icon-bookmark.svg');
+.main-header__link--bookmarks:active path,
+.main-header__link--bookmarks:focus path {
+    fill: #6a7180;
 }
 
-.main-header__link--cart::before {
+.main-header__link--cart svg {
     left: 18px;
 
     width: 15px;
     height: 15px;
 
-    background-image: url('../img/icon-cart.svg');
+    fill: #6a7180;
 }
 
-.main-header__link--cart.main-header__link--full::before {
-    background-image: url('../img/icon-cart-full.svg');
+.main-header__link--cart.main-header__link--full path,
+.main-header__link--cart.main-header__link--full circle {
+    fill: #f3737c;
 }
 
-.main-header__link--cart:hover::before {
-    background-image: url('../img/icon-cart-hover.svg');
+.main-header__link--cart:hover path,
+.main-header__link--cart:hover circle {
+    fill: #ffffff;
 }
 
-.main-header__link--cart:active::before,
-.main-header__link--cart:focus::before {
-    background-image: url('../img/icon-cart.svg');
+.main-header__link--cart:active path,
+.main-header__link--cart:focus path,
+.main-header__link--cart:active circle,
+.main-header__link--cart:focus circle {
+    fill: #6a7180;
 }
 
 .main-header__link--order {
@@ -409,7 +415,6 @@ img {
     background-image: url('../img/icon-home.svg');
     background-repeat: no-repeat;
     background-position: 0 2px;
-    ;
 }
 
 .breadcrumbs__item:not(.breadcrumbs__item--current)::before {
@@ -494,7 +499,7 @@ img {
     padding-right: 25px;
 }
 
-.main-header__account-action--login a::before {
+.main-header__account-action--login svg {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -502,21 +507,16 @@ img {
     width: 20px;
     height: 17px;
     margin-top: -9px;
-
-    content: '';
-
-    background-image: url('../img/icon-login.svg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.main-header__account-action--login a:hover::before {
-    background-image: url('../img/icon-login-hover.svg');
+.main-header__account-action--login:hover path {
+    fill: #32425c;
+    /* background-image: url('../img/icon-login-hover.svg'); */
 }
 
 .main-header__account-action--login a:focus::before,
 .main-header__account-action--login a:active::before {
-    background-image: url('../img/icon-login.svg');
+    /* background-image: url('../img/icon-login.svg'); */
 }
 
 .main-header__account-action--profile a {
@@ -525,7 +525,7 @@ img {
     padding-left: 45px;
 }
 
-.main-header__account-action--profile a::before {
+.main-header__account-action--profile svg {
     position: absolute;
     top: 50%;
     left: 11px;
@@ -535,21 +535,19 @@ img {
     width: 20px;
     height: 18px;
     margin-top: -9px;
-
-    content: '';
-
-    background-image: url('../img/icon-user.svg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.main-header__account-action--profile a:hover::before {
-    background-image: url('../img/icon-user-hover.svg');
+.main-header__account-action--profile path {
+    fill: #c5c5c5;
 }
 
-.main-header__account-action--profile a:active::before,
-.main-header__account-action--profile a:focus::before {
-    background-image: url('../img/icon-user.svg');
+.main-header__account-action--profile:hover path {
+    fill: #32425c;
+}
+
+.main-header__account-action--profile:active path,
+.main-header__account-action--profile:focus path {
+    fill: #c5c5c5;
 }
 
 .main-header__account-action--logout a {
@@ -557,7 +555,7 @@ img {
     font-size: 0;
 }
 
-.main-header__account-action--logout a::after {
+.main-header__account-action--logout svg {
     position: absolute;
     top: 50%;
     right: 10px;
@@ -567,21 +565,19 @@ img {
     width: 21px;
     height: 17px;
     margin-top: -9px;
-
-    content: '';
-
-    background-image: url('../img/icon-logout.svg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.main-header__account-action--logout a:hover::after {
-    background-image: url('../img/icon-logout-hover.svg');
+.main-header__account-action--logout path {
+    fill: #c5c5c5;
 }
 
-.main-header__account-action--logout a:active::after,
-.main-header__account-action--logout a:focus::after {
-    background-image: url('../img/icon-logout.svg');
+.main-header__account-action--logout:hover path {
+    fill: #32425c;
+}
+
+.main-header__account-action--logout:active path,
+.main-header__account-action--logout:focus path {
+    fill: #c5c5c5;
 }
 
 .main-header__account-links {
