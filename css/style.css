@@ -1052,6 +1052,7 @@ img {
     padding-bottom: 8px;
 
     text-transform: uppercase;
+    text-align: center;
 
     color: #fff;
     border: 3px solid;
@@ -1062,7 +1063,10 @@ img {
 }
 
 .goods-card__button--submit {
+    box-sizing: border-box;
     padding-left: 12px;
+
+    text-align: center;
 
     border-color: #63a83c;
     background-color: #63a83c;
