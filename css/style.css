@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Cuprum', Arial, sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
 
     margin: 0;
@@ -43,8 +43,6 @@ img {
 /* main-header */
 
 .main-header {
-    font-family: Cuprum, Arial, sans-serif;
-
     width: 100%;
     padding-bottom: 60px;
 
@@ -88,7 +86,6 @@ img {
 
 .main-header__logo,
 .main-footer__logo {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 24px;
 
     text-transform: uppercase;
@@ -255,7 +252,6 @@ img {
 /* top-actions */
 
 .main-header__link {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 17px;
     line-height: 41px;
 
@@ -606,7 +602,6 @@ img {
 }
 
 .main-header__account-link {
-    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 16px;
 
     position: relative;
@@ -653,7 +648,6 @@ img {
 /* main-nav */
 
 .main-nav {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 17px;
     line-height: 56px;
 
@@ -718,7 +712,6 @@ img {
 }
 
 .main__title {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 30px;
     font-weight: normal;
     line-height: 90px;
@@ -1039,7 +1032,6 @@ img {
 }
 
 .goods-card__button {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 14px;
 
     display: block;
@@ -1156,7 +1148,6 @@ img {
 /* group-descr */
 
 .group-descr__title {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 30px;
 
     text-transform: uppercase;
@@ -1182,8 +1173,6 @@ img {
 
 .about,
 .contacts {
-    font-family: Cuprum, Arial, sans-serif;
-
     color: #000;
 }
 
@@ -1307,8 +1296,6 @@ img {
 /* footers */
 
 .main-footer__nav {
-    font-family: Cuprum, Arial, sans-serif;
-
     color: #fff;
     background-color: #3d546e;
 }
@@ -1440,8 +1427,6 @@ img {
 }
 
 .main-footer__contacts {
-    font-family: Cuprum, Arial, sans-serif;
-
     padding-top: 36px;
     padding-bottom: 32px;
 
@@ -1557,8 +1542,6 @@ img {
 /* ------------------------------------- */
 
 .main-footer {
-    font-family: Cuprum, Arial, sans-serif;
-
     display: flex;
     flex-direction: column;
 }
@@ -1722,7 +1705,6 @@ img {
 }
 
 .modal-feedback__label-text {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 18px;
 
     display: block;
@@ -1744,7 +1726,6 @@ img {
 }
 
 .modal-feedback__button {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 14px;
 
     display: block;
@@ -1820,7 +1801,6 @@ img {
 }
 
 .modal-cart-added__title {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 30px;
     font-weight: normal;
 
@@ -1848,7 +1828,6 @@ img {
 }
 
 .modal-cart-added__button {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 14px;
 
     box-sizing: border-box;
