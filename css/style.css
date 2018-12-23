@@ -1287,7 +1287,7 @@ img {
 
 .contacts__feedback-link {
     padding-left: 65px;
-    display: inline-block;
+    display: block;
 
     min-height: 38px;
 
