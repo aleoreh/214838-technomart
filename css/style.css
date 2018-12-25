@@ -451,6 +451,7 @@ img {
 }
 
 .main-header__account-action--logout a {
+    min-height: 44px;
     padding-left: 19px;
 
     font-size: 0;
