@@ -702,10 +702,26 @@ img {
     background-image: url('../img/checkbox-off.svg');
 }
 
+.main-filter__checkbox-input:disabled+.main-filter__checkbox-label::before {
+    background-image: url('../img/checkbox-off-disabled.svg');
+}
+
+.main-filter__checkbox-input:disabled+.main-filter__checkbox-label:hover::before {
+    background-image: url('../img/checkbox-off-disabled.svg');
+}
+
 .main-filter__checkbox-input:checked+.main-filter__checkbox-label::before {
     left: -3px;
 
     background-image: url('../img/checkbox-on.svg');
+}
+
+.main-filter__checkbox-input:checked:disabled+.main-filter__checkbox-label::before {
+    background-image: url('../img/checkbox-on-disabled.svg');
+}
+
+.main-filter__checkbox-input:checked:disabled+.main-filter__checkbox-label:hover::before {
+    background-image: url('../img/checkbox-on-disabled.svg');
 }
 
 .main-filter__checkbox-input+.main-filter__checkbox-label:hover::before {
@@ -736,6 +752,11 @@ img {
     background-image: url('../img/radio-off.svg');
 }
 
+.main-filter__radio-input:disabled+.main-filter__radio-label::before,
+.main-filter__radio-input:disabled+.main-filter__radio-label:hover::before {
+    background-image: url('../img/radio-off-disabled.svg');
+}
+
 .main-filter__radio-input+.main-filter__radio-label:hover::before {
     background-image: url('../img/radio-off-hover.svg');
 }
@@ -744,6 +765,11 @@ img {
     left: -3px;
 
     background-image: url('../img/radio-on.svg');
+}
+
+.main-filter__radio-input:checked:disabled+.main-filter__radio-label::before,
+.main-filter__radio-input:checked:disabled+.main-filter__radio-label:hover::before {
+    background-image: url('../img/radio-on-disabled.svg');
 }
 
 .main-filter__radio-input:checked:hover+.main-filter__radio-label::before {
