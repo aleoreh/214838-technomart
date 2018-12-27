@@ -431,6 +431,8 @@ img {
     width: 20px;
     height: 18px;
     margin-top: -9px;
+
+    vertical-align: middle;
 }
 
 .main-header__account-action--logout a {
@@ -450,6 +452,8 @@ img {
     width: 21px;
     height: 17px;
     margin-top: -9px;
+
+    vertical-align: middle;
 }
 
 .main-header__account-action--logout path {
@@ -1208,6 +1212,8 @@ img {
 
     color: #ffffff;
     background-color: #ef3341;
+
+    vertical-align: middle;
 }
 
 .about__details-link:hover {
@@ -1532,6 +1538,8 @@ img {
     width: 42px;
     height: 42px;
     margin-right: 2px;
+
+    vertical-align: middle;
 }
 
 .main-footer__social-icon a {
