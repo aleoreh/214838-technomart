@@ -299,29 +299,27 @@ img {
     fill: #6a7180;
 }
 
+.main-header__link--cart {
+    fill: #6a7180;
+}
+
 .main-header__link--cart svg {
     left: 18px;
 
     width: 15px;
     height: 15px;
-
-    fill: #6a7180;
 }
 
-.main-header__link--cart.main-header__link--full path,
-.main-header__link--cart.main-header__link--full circle {
+.main-header__link--cart.main-header__link--full {
     fill: #f3737c;
 }
 
-.main-header__link--cart:hover path,
-.main-header__link--cart:hover circle {
+.main-header__link--cart:hover {
     fill: #ffffff;
 }
 
-.main-header__link--cart:active path,
-.main-header__link--cart:focus path,
-.main-header__link--cart:active circle,
-.main-header__link--cart:focus circle {
+.main-header__link--cart:active,
+.main-header__link--cart:focus {
     fill: #6a7180;
 }
 
@@ -376,15 +374,18 @@ img {
 
     color: #000000;
     background-color: #ffffff;
+    fill: #c5c5c5;
 }
 
 .main-header__account-action a:hover {
     color: #ee3643;
+    fill: #32425c;
 }
 
 .main-header__account-action a:focus,
 .main-header__account-action a:active {
     color: rgba(0, 0, 0, .5);
+    fill: #c5c5c5;
 }
 
 .main-header__account-action--register a {
@@ -415,10 +416,6 @@ img {
     margin-top: -9px;
 }
 
-.main-header__account-action--login:hover path {
-    fill: #32425c;
-}
-
 .main-header__account-action--profile a {
     position: relative;
 
@@ -436,24 +433,12 @@ img {
     margin-top: -9px;
 }
 
-.main-header__account-action--profile path {
-    fill: #c5c5c5;
-}
-
-.main-header__account-action--profile:hover path {
-    fill: #32425c;
-}
-
-.main-header__account-action--profile:active path,
-.main-header__account-action--profile:focus path {
-    fill: #c5c5c5;
-}
-
 .main-header__account-action--logout a {
     min-height: 44px;
     padding-left: 19px;
 
     font-size: 0;
+    fill: #c5c5c5;
 }
 
 .main-header__account-action--logout svg {
@@ -468,15 +453,13 @@ img {
 }
 
 .main-header__account-action--logout path {
-    fill: #c5c5c5;
 }
 
-.main-header__account-action--logout:hover path {
+.main-header__account-action--logout:hover {
     fill: #32425c;
 }
 
-.main-header__account-action--logout:active path,
-.main-header__account-action--logout:focus path {
+.main-header__account-action--logout:focus {
     fill: #c5c5c5;
 }
 
@@ -1031,15 +1014,12 @@ img {
 
     border-color: #63a83c;
     background-color: #63a83c;
+    fill: #92c178;
 }
 
 .goods-card__button--submit:hover {
     border-color: #5fbc29;
     background-color: #5fbc29;
-}
-
-.goods-card__button--submit:hover path,
-.goods-card__button--submit:hover circle {
     fill: #ffffff;
 }
 
@@ -1047,12 +1027,6 @@ img {
 .goods-card__button--submit:focus {
     border-color: #508631;
     background-color: #508631;
-}
-
-.goods-card__button--submit:active path,
-.goods-card__button--submit:focus path,
-.goods-card__button--submit:active circle,
-.goods-card__button--submit:focus circle {
     fill: #ffffff;
 }
 
@@ -1064,11 +1038,6 @@ img {
     left: 11px;
 
     margin-top: -7px;
-}
-
-.goods-card__button--submit path,
-.goods-card__button--submit circle {
-    fill: #92c178;
 }
 
 .goods-card__button--bookmark {
