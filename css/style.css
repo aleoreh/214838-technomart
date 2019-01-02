@@ -933,6 +933,24 @@ img {
     transform: rotate(45deg);
 }
 
+/* popular-goods */
+
+.popular-goods__header {
+    background-color: #f9f5f0;
+}
+
+.popular-goods__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.popular-goods__link {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
 /* main-filter */
 
 .main-filter {
