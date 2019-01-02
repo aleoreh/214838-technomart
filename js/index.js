@@ -42,7 +42,7 @@ feedbackClose.addEventListener('click', function(ev) {
 feedbackForm.addEventListener('submit', function(ev) {
     if (!feedbackNameInput.value || !feedbackEmailInput.value || !feedbackTextarea.value) {
         ev.preventDefault();
-        console.log("Нужно ввести имя, email и текст сообщения");
+        console.log('Нужно ввести имя, email и текст сообщения');
     } else {
         if (hasStorageSupport) {
             localStorage.setItem('name', feedbackNameInput.value);
@@ -51,11 +51,12 @@ feedbackForm.addEventListener('submit', function(ev) {
     }
 });
 
-window.addEventListener("keydown", function (ev) {
+window.addEventListener('keydown', function (ev) {
     if (ev.keyCode === 27) {
         ev.preventDefault();
-        if (feedbackModal.classList.contains("modal-show")) {
-            feedbackModal.classList.remove("modal-show");
+        if (feedbackModal.classList.contains('modal-show')) {
+            feedbackModal.classList.remove('modal-show');
         }
     }
 });
+
