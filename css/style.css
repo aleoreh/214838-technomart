@@ -614,6 +614,105 @@ img {
     display: flex;
 }
 
+/* promo-card */
+
+.promo-card {
+    color: #ffffff;
+}
+
+.promo-card__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.promo-card__link {
+    line-height: 38px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background-color: #e5e5e5;
+}
+
+.promo-card__link:hover {
+    background-color: #cccccc;
+}
+
+.promo-card__link:active,
+.promo-card__link:focus {
+    background-color: #b2b2b2;
+}
+
+.promo__card-item--horizontal-1 {
+    background-image: url("../img/promo__card-item--horizontal-1.png");
+    background-repeat: no-repeat;
+    background-color: #ffbf47;
+}
+
+.promo__card-item--horizontal-2 {
+    background-image: url("../img/promo__card-item--horizontal-2.png");
+    background-repeat: no-repeat;
+    background-color: #3bbce3;
+}
+
+.promo__card-item--horizontal-3 {
+    background-image: url("../img/promo__card-item--horizontal-3.png");
+    background-repeat: no-repeat;
+    background-color: #dc91d8;
+}
+
+.promo__card-item--vertical-1 {
+    background-image: url("../img/promo__card-item--vertical-1.png");
+    background-repeat: no-repeat;
+    background-color: #8ed78f;
+}
+
+.promo__card-item--vertical-2 {
+    background-image: url("../img/promo__card-item--vertical-2.png");
+    background-repeat: no-repeat;
+    background-color: #ffc047;
+}
+
+/* main-slider */
+
+.main-slider {
+    color: #ffffff;
+}
+
+.main-slider__slide-1 {
+    background-image: url("../img/slider-1.jpg")
+}
+
+.main-slider__slide-2 {
+    background-image: url("../img/slider-2.jpg");
+}
+
+.main-slider__title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-slider__description {
+    font-size: 18px;
+}
+
+.main-slider__link {
+    line-height: 38px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.main-slider__link:hover {
+    background-color: #ca2c37;
+}
+
+.main-slider__link:active,
+.main-slider__link:focus {
+    background-color: #ba2732;
+}
+
 .main-filter {
     width: 220px;
     margin-right: 20px;
