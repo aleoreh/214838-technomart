@@ -622,7 +622,6 @@ img {
 
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
 
     justify-content: space-between;
     flex-wrap: wrap;
@@ -635,6 +634,8 @@ img {
 .promo-card {
     padding-left: 22px;
     padding-top: 22px;
+    padding-right: 123px;
+    padding-bottom: 22px;
 
     color: #ffffff;
 }
@@ -674,7 +675,12 @@ img {
 
 .promo__card-item {
     min-height: 123px;
-    min-width: 300px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.promo__slider-group-cards > .promo__card-item:last-child {
+    margin-bottom: 0;
 }
 
 .promo__card-item--horizontal-1 {
@@ -736,6 +742,8 @@ img {
 
 .main-slider {
     position: relative;
+
+    align-self: flex-start;
 
     color: #ffffff;
 }
