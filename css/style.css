@@ -586,6 +586,10 @@ img {
 
 /* main */
 
+.full-width-container {
+    overflow: hidden;
+}
+
 .main {
     padding-top: 62px;
     padding-bottom: 86px;
@@ -1102,6 +1106,19 @@ img {
 .popular-brands__item:last-child,
 .popular-brands__item:nth-child(4) {
     margin-right: 0;
+}
+
+/* services */
+
+.services-wrapper {
+    width: 10940px;
+    margin-left: -5000px;
+
+    background-color: #f4f8f9;
+}
+
+.services {
+
 }
 
 /* main-filter */
