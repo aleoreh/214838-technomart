@@ -975,6 +975,15 @@ img {
     background-color: #ee3643;
 }
 
+.popular-goods__link:hover {
+    background-color: #ca2c37;
+}
+
+.popular-goods__link:active,
+.popular-goods__link:focus {
+    background-color: #ba2732;
+}
+
 .popular-goods__list {
     display: flex;
 
@@ -1042,6 +1051,15 @@ img {
 
     color: #ffffff;
     background-color: #ee3643;
+}
+
+.popular-brands__link:hover {
+    background-color: #ca2c37;
+}
+
+.popular-brands__link:active,
+.popular-brands__link:focus {
+    background-color: #ba2732;
 }
 
 .popular-brands__list {
