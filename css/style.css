@@ -617,6 +617,10 @@ img {
 
 /* promo */
 
+.promo {
+    margin-bottom: 53px;
+}
+
 .promo__cards {
     display: flex;
 
@@ -936,19 +940,68 @@ img {
 /* popular-goods */
 
 .popular-goods__header {
+    display: flex;
+
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 24px;
+
+    justify-content: space-between;
+    align-items: center;
+
     background-color: #f9f5f0;
 }
 
 .popular-goods__title {
+    margin: 0;
+
     font-size: 30px;
+    font-weight: normal;
     text-transform: uppercase;
     color: #32425c;
 }
 
 .popular-goods__link {
+    width: 253px;
+    min-height: 38px;
+
     text-transform: uppercase;
+    line-height: 38px;
+    text-align: center;
+
     color: #ffffff;
     background-color: #ee3643;
+}
+
+.popular-goods__list {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    flex-wrap: wrap;
+
+    list-style: none;
+}
+
+.popular-goods__item {
+    position: relative;
+
+    display: flex;
+
+    width: 218px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    border: 1px solid #e6e6e6;
+
+    justify-content: space-around;
+}
+
+.popular-goods__item:last-child {
+    margin-right: 0;
 }
 
 /* main-filter */
