@@ -1121,6 +1121,41 @@ img {
 
 }
 
+.services__title {
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.services__description {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+}
+
+.services__item {
+    font-size: 21px;
+    color: #ffffff;
+    background-color: #32425c;
+}
+
+.services__item--current {
+    color: #32425c;
+    background-color: #ffffff;
+}
+
+.services__info-title {
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    color: #32425c;
+}
+
+.services__info-description {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+}
+
 /* main-filter */
 
 .main-filter {
