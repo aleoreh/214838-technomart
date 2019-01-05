@@ -21,6 +21,21 @@ var sliderPosIndicators = [
     document.querySelector('.main-slider__position-indicator--2'),
 ];
 
+var currentService = 1;
+var deliveryTabButton = document.querySelector('.services__item--1 .services__item-button');
+var garanteeTabButton = document.querySelector('.services__item--2 .services__item-button');
+var creditTabButton =   document.querySelector('.services__item--3 .services__item-button');
+var serviceTabs = [
+    document.querySelector('.services__item--1'),
+    document.querySelector('.services__item--2'),
+    document.querySelector('.services__item--3'),
+];
+var serviceSections = [
+    document.querySelector('.services__info--1'),
+    document.querySelector('.services__info--2'),
+    document.querySelector('.services__info--3'),
+];
+
 try {
     storage = {
         name: localStorage.getItem('name'),
@@ -105,3 +120,38 @@ sliderForward.addEventListener('click', function(ev) {
 });
 
 switchSlider(currentSlide);
+
+// service tabs
+
+function switchService(serviceNum) {
+    serviceSections.forEach(function(section, index) {
+        if (index + 1 !== serviceNum) {
+            section.classList.remove('services__info--current');
+        };
+    });
+    serviceTabs.forEach(function(tab, index) {
+        if (index + 1 !== serviceNum) {
+            tab.classList.remove('services__item--current');
+        };
+    });
+    serviceSections[serviceNum - 1].classList.add('services__info--current');
+    serviceTabs[serviceNum - 1].classList.add('services__item--current');
+}
+
+deliveryTabButton.addEventListener('click', function(ev) {
+    ev.preventDefault();
+
+    switchService(1);
+});
+
+garanteeTabButton.addEventListener('click', function(ev) {
+    ev.preventDefault();
+
+    switchService(2);
+});
+
+creditTabButton.addEventListener('click', function(ev) {
+    ev.preventDefault();
+
+    switchService(3);
+});
