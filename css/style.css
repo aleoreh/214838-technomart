@@ -1164,19 +1164,38 @@ img {
 }
 
 .services__item {
+    color: #ffffff;
+    background-color: #32425c;
+}
+
+.services__item-button {
+    display: block;
+
+    width: 100%;
     padding-left: 22px;
 
     font-size: 21px;
+    text-align: left;
     line-height: 61px;
 
-    color: #ffffff;
-    background-color: #32425c;
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0);
+
+    border: none;
+}
+
+.services__item:hover:not(.services__item--current) {
+    background-color: #293449;
 }
 
 .services__item--current {
     color: #32425c;
     background-color: #ffffff;
 }
+
+/* .services__item-button { */
+/*     background-color: rgba(255,255,255,0); */
+/* } */
 
 .services__info-wrapper {
     display: flex;
