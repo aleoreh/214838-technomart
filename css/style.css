@@ -672,6 +672,7 @@ img {
     background-color: rgba(0, 0, 0, 0.1);
 
     vertical-align: middle;
+    border-radius: 3px;
 }
 
 .promo-card__link:hover {
@@ -841,6 +842,7 @@ img {
     background-color: #ee3643;
 
     z-index: 1;
+    border-radius: 3px;
 }
 
 .main-slider__link:hover {
@@ -977,6 +979,8 @@ img {
 
     color: #ffffff;
     background-color: #ee3643;
+
+    border-radius: 3px;
 }
 
 .popular-goods__link:hover {
@@ -1059,6 +1063,8 @@ img {
 
     color: #ffffff;
     background-color: #ee3643;
+
+    border-radius: 3px;
 }
 
 .popular-brands__link:hover {
