@@ -2504,12 +2504,13 @@ img {
 /* modal-card-added */
 
 .modal-cart-added {
-    position: relative;
+    position: fixed;
 
     width: 620px;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-left: auto;
+    margin-top: 20px;
+    margin-left: -320px;
+
+    background-color: #fff;
 
     box-shadow: 0 -8px #ff5358, 0 20px 40px #000000;
 }

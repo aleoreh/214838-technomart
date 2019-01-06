@@ -1,13 +1,51 @@
 var storage;
 var hasStorageSupport = true;
 
+// feedback
+
 var feedbackLink = document.querySelector('.contacts__feedback-link');
 var feedbackModal = document.querySelector('.modal-feedback');
-var feedbackClose = feedbackModal.querySelector('.modal-feedback__close');
-var feedbackForm = feedbackModal.querySelector('form');
-var feedbackNameInput = feedbackModal.querySelector('[name=name]');
-var feedbackEmailInput = feedbackModal.querySelector('[name=email]');
-var feedbackTextarea = feedbackModal.querySelector('textarea');
+if (feedbackModal) {
+    var feedbackClose = feedbackModal.querySelector('.modal-feedback__close');
+    var feedbackForm = feedbackModal.querySelector('form');
+    var feedbackNameInput = feedbackModal.querySelector('[name=name]');
+    var feedbackEmailInput = feedbackModal.querySelector('[name=email]');
+    var feedbackTextarea = feedbackModal.querySelector('textarea');
+
+    feedbackLink.addEventListener('click', function(ev) {
+        ev.preventDefault();
+        feedbackModal.classList.add('modal-show');
+        if (hasStorageSupport) {
+            feedbackNameInput.value = storage.name;
+            feedbackEmailInput.value = storage.email;
+            if (!feedbackNameInput.value) {
+                feedbackNameInput.focus();
+            } else if (!feedbackEmailInput.value) {
+                feedbackEmailInput.focus();
+            } else {
+                feedbackTextarea.focus();
+            }
+        }
+    });
+
+    feedbackClose.addEventListener('click', function(ev) {
+        ev.preventDefault();
+        feedbackModal.classList.remove('modal-show');
+    });
+    feedbackForm.addEventListener('submit', function(ev) {
+        if (!feedbackNameInput.value || !feedbackEmailInput.value || !feedbackTextarea.value) {
+            ev.preventDefault();
+            console.log('Нужно ввести имя, email и текст сообщения');
+        } else {
+            if (hasStorageSupport) {
+                localStorage.setItem('name', feedbackNameInput.value);
+                localStorage.setItem('email', feedbackEmailInput.value);
+            }
+        }
+    });
+}
+
+// slider
 
 var currentSlide = 2;
 var sliderBackward = document.querySelector('.main-slider__rewind--backward');
@@ -20,6 +58,8 @@ var sliderPosIndicators = [
     document.querySelector('.main-slider__position-indicator--1'),
     document.querySelector('.main-slider__position-indicator--2'),
 ];
+
+// services
 
 var currentService = 1;
 var deliveryTabButton = document.querySelector('.services__item--1 .services__item-button');
@@ -36,6 +76,14 @@ var serviceSections = [
     document.querySelector('.services__info--3'),
 ];
 
+// cart added
+
+var cartAddedLinks = document.querySelectorAll('.goods-card__button--submit');
+var cartAddedModal = document.querySelector('.modal-cart-added');
+var cartAddedClose = document.querySelector('.modal-cart-added__close');
+
+// app
+
 try {
     storage = {
         name: localStorage.getItem('name'),
@@ -45,44 +93,29 @@ try {
     hasStorageSupport = false;
 }
 
-feedbackLink.addEventListener('click', function(ev) {
-    ev.preventDefault();
-    feedbackModal.classList.add('modal-show');
-    if (hasStorageSupport) {
-        feedbackNameInput.value = storage.name;
-        feedbackEmailInput.value = storage.email;
-        if (!feedbackNameInput.value) {
-            feedbackNameInput.focus();
-        } else if (!feedbackEmailInput.value) {
-            feedbackEmailInput.focus();
-        } else {
-            feedbackTextarea.focus();
-        }
-    }
-});
-
-feedbackClose.addEventListener('click', function(ev) {
-    ev.preventDefault();
-    feedbackModal.classList.remove('modal-show');
-});
-
-feedbackForm.addEventListener('submit', function(ev) {
-    if (!feedbackNameInput.value || !feedbackEmailInput.value || !feedbackTextarea.value) {
+cartAddedLinks.forEach(function(link) {
+    link.addEventListener('click', function(ev) {
         ev.preventDefault();
-        console.log('Нужно ввести имя, email и текст сообщения');
-    } else {
-        if (hasStorageSupport) {
-            localStorage.setItem('name', feedbackNameInput.value);
-            localStorage.setItem('email', feedbackEmailInput.value);
-        }
-    }
+
+        cartAddedModal.classList.add('modal-show');
+    });
 });
+
+if (cartAddedModal) {
+    cartAddedClose.addEventListener('click', function(ev) {
+        ev.preventDefault();
+        cartAddedModal.classList.remove('modal-show');
+    });
+}
 
 window.addEventListener('keydown', function(ev) {
     if (ev.keyCode === 27) {
         ev.preventDefault();
-        if (feedbackModal.classList.contains('modal-show')) {
+        if (feedbackModal && feedbackModal.classList.contains('modal-show')) {
             feedbackModal.classList.remove('modal-show');
+        }
+        if (cartAddedModal && cartAddedModal.classList.contains('modal-show')) {
+            cartAddedModal.classList.remove('modal-show');
         }
     }
 });
@@ -105,21 +138,23 @@ function switchSlider(cur) {
     });
 }
 
-sliderBackward.addEventListener('click', function(ev) {
-    ev.preventDefault();
+if (sliderBackward) {
+    sliderBackward.addEventListener('click', function(ev) {
+        ev.preventDefault();
 
-    currentSlide = currentSlide === 1 ? currentSlide : currentSlide - 1;
+        currentSlide = currentSlide === 1 ? currentSlide : currentSlide - 1;
+        switchSlider(currentSlide);
+    });
+
+    sliderForward.addEventListener('click', function(ev) {
+        ev.preventDefault();
+
+        currentSlide = currentSlide === 2 ? currentSlide : currentSlide + 1;
+        switchSlider(currentSlide);
+    });
+
     switchSlider(currentSlide);
-});
-
-sliderForward.addEventListener('click', function(ev) {
-    ev.preventDefault();
-
-    currentSlide = currentSlide === 2 ? currentSlide : currentSlide + 1;
-    switchSlider(currentSlide);
-});
-
-switchSlider(currentSlide);
+}
 
 // service tabs
 
@@ -138,20 +173,22 @@ function switchService(serviceNum) {
     serviceTabs[serviceNum - 1].classList.add('services__item--current');
 }
 
-deliveryTabButton.addEventListener('click', function(ev) {
-    ev.preventDefault();
+if (deliveryTabButton) {
+    deliveryTabButton.addEventListener('click', function(ev) {
+        ev.preventDefault();
 
-    switchService(1);
-});
+        switchService(1);
+    });
 
-garanteeTabButton.addEventListener('click', function(ev) {
-    ev.preventDefault();
+    garanteeTabButton.addEventListener('click', function(ev) {
+        ev.preventDefault();
 
-    switchService(2);
-});
+        switchService(2);
+    });
 
-creditTabButton.addEventListener('click', function(ev) {
-    ev.preventDefault();
+    creditTabButton.addEventListener('click', function(ev) {
+        ev.preventDefault();
 
-    switchService(3);
-});
+        switchService(3);
+    });
+}
