@@ -91,6 +91,21 @@
                     <h2 class="visually-hidden">Основной фильтр</h2>
                     <b class="main-filter__title">Фильтр:</b>
                     <form class="main-filter__form" method="POST" action="http://example.com">
+                        <section class="main-filter__price">
+                            <h3 class="main-filter__section-title">Цена:</h3>
+                            <div class="main-filter__price-range">
+                                <div class="main-filter__price-scale">
+                                    <div class="main-filter__price-bar"></div>
+                                </div>
+                                <div class="main-filter__price-toggle main-filter__price-toggle--min"></div>
+                                <div class="main-filter__price-toggle main-filter__price-toggle--max"></div>
+                            </div>
+                            <div class="main-filter__price-values-wrapper">
+                                <span class="main-filter__price-label">0</span>
+                                <span>-</span>
+                                <span class="main-filter__price-label">30000</span>
+                            </div>
+                        </section>
                         <fieldset class="main-filter__section">
                             <h3 class="main-filter__section-title">Производители:</h3>
                             <ul class="main-filter__list">

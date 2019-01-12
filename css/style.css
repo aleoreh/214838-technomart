@@ -591,7 +591,6 @@ img {
 }
 
 .main {
-    padding-top: 62px;
     padding-bottom: 86px;
 }
 
@@ -620,6 +619,10 @@ img {
 }
 
 /* promo */
+
+.promo-push {
+    height: 62px;
+}
 
 .promo {
     margin-bottom: 53px;
@@ -1303,9 +1306,91 @@ img {
     margin-right: 20px;
 }
 
+.main-filter__price-range {
+    position: relative;
+
+    height: 80px;
+    margin-bottom: 10px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+
+    background-color: #f7f3ec;
+}
+
+.main-filter__price-scale {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 2px;
+
+    margin-top: -1px;
+    margin-left: -90px;
+
+    background-color: #d7dcde;
+}
+
+.main-filter__price-bar {
+    width: 80%;
+    height: 100%;
+
+    background-color: #00ca74;
+}
+
+.main-filter__price-toggle {
+    position: absolute;
+
+    top: 50%;
+
+    width: 4px;
+    height: 4px;
+    border: 8px solid #ffffff;
+
+    margin-top: -10px;
+
+    background-color: #ababab;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-filter__price-toggle--min {
+    left: 20px;
+}
+
+.main-filter__price-toggle--max {
+    left: 160px;
+}
+
+.main-filter__price-label {
+    display: inline-block;
+
+    width: 95px;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 38px;
+    text-align: center;
+
+    background-color: #f7f3ec;
+
+    vertical-align: middle;
+}
+
+.main-filter__price-values-wrapper {
+    display: flex;
+
+    margin-bottom: 25px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
 .main-filter__section {
     margin-bottom: 23px;
     padding: 0;
+    padding-top: 22px;
 
     border: none;
     border-top: 1px solid #e5e5e5;
@@ -1332,7 +1417,7 @@ img {
 
 .main-filter__section-title {
     margin: 0;
-    padding-top: 22px;
+    margin-bottom: 20px;
 
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 17px;
@@ -1344,7 +1429,6 @@ img {
 .main-filter__list {
     margin: 0;
     padding: 0;
-    padding-top: 20px;
 
     list-style: none;
 }
@@ -2353,6 +2437,7 @@ img {
 
     background-color: #ffffff;
     box-shadow: 0 -8px #ff5358, 0 20px 40px #000000;
+    z-index: 1000;
 }
 
 .modal-feedback__text {
@@ -2480,6 +2565,7 @@ img {
     margin-left: auto;
 
     box-shadow: 0 0 16px #000000;
+    z-index: 1000;
 }
 
 .modal-google-map__close {
@@ -2513,6 +2599,7 @@ img {
     background-color: #fff;
 
     box-shadow: 0 -8px #ff5358, 0 20px 40px #000000;
+    z-index: 1000;
 }
 
 .modal-cart-added__title {
