@@ -93,13 +93,13 @@ try {
     hasStorageSupport = false;
 }
 
-cartAddedLinks.forEach(function(link) {
-    link.addEventListener('click', function(ev) {
+for (var i = 0; i < cartAddedLinks.length; i++) {
+    cartAddedLinks[i].addEventListener('click', function(ev) {
         ev.preventDefault();
 
         cartAddedModal.classList.add('modal-show');
     });
-});
+}
 
 if (cartAddedModal) {
     cartAddedClose.addEventListener('click', function(ev) {
@@ -121,21 +121,20 @@ window.addEventListener('keydown', function(ev) {
 });
 
 function switchSlider(cur) {
-    sliderItems.forEach(function(item) {
-        if (item.classList.contains('main-slider__slide--' + cur)) {
-            item.classList.add('main-slider__slide--current');
+    for (let i = 0; i < sliderItems.length; i++) {
+        if (sliderItems[i].classList.contains('main-slider__slide--' + cur)) {
+            sliderItems[i].classList.add('main-slider__slide--current');
         } else {
-            item.classList.remove('main-slider__slide--current');
+            sliderItems[i].classList.remove('main-slider__slide--current');
         }
-    });
-
-    sliderPosIndicators.forEach(function(item) {
-        if (item.classList.contains('main-slider__position-indicator--' + cur)) {
-            item.classList.add('main-slider__position-indicator--current');
+    }
+    for (let i = 0; i < sliderPosIndicators.length; i++) {
+        if (sliderPosIndicators[i].classList.contains('main-slider__position-indicator--' + cur)) {
+            sliderPosIndicators[i].classList.add('main-slider__position-indicator--current');
         } else {
-            item.classList.remove('main-slider__position-indicator--current');
+            sliderPosIndicators[i].classList.remove('main-slider__position-indicator--current');
         }
-    });
+    }
 }
 
 if (sliderBackward) {
@@ -159,16 +158,16 @@ if (sliderBackward) {
 // service tabs
 
 function switchService(serviceNum) {
-    serviceSections.forEach(function(section, index) {
-        if (index + 1 !== serviceNum) {
-            section.classList.remove('services__info--current');
+    for (let i = 0; i < serviceSections.length; i++) {
+        if (i + 1 !== serviceNum) {
+            serviceSections[i].classList.remove('services__info--current');
         };
-    });
-    serviceTabs.forEach(function(tab, index) {
-        if (index + 1 !== serviceNum) {
-            tab.classList.remove('services__item--current');
+    }
+    for (let i = 0; i < serviceTabs.length; i++) {
+        if (i + 1 !== serviceNum) {
+            serviceTabs[i].classList.remove('services__item--current');
         };
-    });
+    }
     serviceSections[serviceNum - 1].classList.add('services__info--current');
     serviceTabs[serviceNum - 1].classList.add('services__item--current');
 }

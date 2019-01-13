@@ -1953,6 +1953,7 @@ img {
 
 .goods-card {
     display: flex;
+    flex-basis: 100%; /* IE fix */
     flex-direction: column;
 
     padding-top: 27px;
@@ -1987,6 +1988,7 @@ img {
 }
 
 .goods-card__link {
+    max-width: 100%;
     min-height: 42px;
     margin-bottom: 10px;
 
@@ -2017,7 +2019,7 @@ img {
 
     color: #999;
 
-    text-decoration-line: line-through;
+    text-decoration: line-through;
 }
 
 .goods-card__price--new {
