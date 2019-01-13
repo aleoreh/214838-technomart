@@ -591,6 +591,13 @@ img {
 }
 
 .main {
+}
+
+.main--padding-top {
+    padding-top: 62px;
+}
+
+.main--padding-bottom {
     padding-bottom: 86px;
 }
 
@@ -616,13 +623,11 @@ img {
 
 .main__catalog-choice {
     display: flex;
+
+    margin-bottom: 60px;
 }
 
 /* promo */
-
-.promo-push {
-    height: 62px;
-}
 
 .promo {
     margin-bottom: 53px;
@@ -1759,6 +1764,10 @@ img {
 
 /* catalog */
 
+.container-expander--catalog {
+    background-color: #f2f6f8;
+}
+
 .catalog {
     display: flex;
     flex-direction: column;
@@ -1811,6 +1820,30 @@ img {
     background-image: url('../img/new-flag.png');
     background-repeat: no-repeat;
 }
+
+.catalog-description {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.catalog-description__title {
+    margin: 0;
+    margin-bottom: 23px;
+
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.catalog-description__text {
+    margin: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+/* catalod end */
 
 .goods-card {
     display: flex;
