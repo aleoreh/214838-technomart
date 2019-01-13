@@ -39,6 +39,58 @@ img {
     padding: 0 10px;
 }
 
+.offset_0_-22 {
+    margin-top: -22px;
+}
+
+.offset_-15_1 {
+    margin-right: 15px;
+    margin-top: 1px;
+}
+
+.offset_-20_-6 {
+    margin-right: 20px;
+    margin-top: -6px;
+}
+
+.offset_-28_1 {
+    margin-right: 28px;
+    margin-top: 1;
+}
+
+.offset_0_-5 {
+    margin-top: -5px;
+}
+
+.offset_-1_-15 {
+    margin-right: 1;
+    margin-top: -15px;
+}
+
+.offset_6_0 {
+    margin-right: -6px;
+}
+
+.offset_3_-8 {
+    margin-right: -3px;
+    margin-top: -8px;
+}
+
+.offset_-14_2 {
+    margin-right: 14px;
+    margin-top: 2px;
+}
+
+.offset_-22_-5 {
+    margin-right: 22px;
+    margin-top: -5px;
+}
+
+.offset_-27_1 {
+    margin-right: 27px;
+    margin-top: 1px;
+}
+
 
 /* main-header */
 
@@ -594,7 +646,7 @@ img {
 }
 
 .main--padding-top {
-    padding-top: 62px;
+    padding-top: 60px;
 }
 
 .main--padding-bottom {
@@ -1024,13 +1076,29 @@ img {
 
     display: flex;
 
-    width: 218px;
+    width: 220px;
     margin-right: 20px;
     margin-bottom: 20px;
 
     border: 1px solid #e6e6e6;
 
     justify-content: space-around;
+
+    box-sizing: border-box;
+}
+
+.popular-goods__item--new::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 60px;
+    height: 60px;
+
+    content: '';
+
+    background-image: url('../img/new-flag.png');
+    background-repeat: no-repeat;
 }
 
 .popular-goods__item:last-child,
@@ -1830,13 +1898,15 @@ img {
 
     display: flex;
 
-    width: 218px;
+    width: 220px;
     margin-right: 20px;
     margin-bottom: 20px;
 
     border: 1px solid #e6e6e6;
 
     justify-content: space-around;
+
+    box-sizing: border-box;
 }
 
 .catalog__item:nth-child(3n) {
@@ -1903,7 +1973,6 @@ img {
 
 .goods-card__image {
     height: 150px;
-    margin-left: -14px;
 }
 
 .goods-card__actions {
