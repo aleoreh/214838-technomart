@@ -1204,10 +1204,7 @@ img {
 
 /* services */
 
-.container-expander {
-    width: 10940px;
-    margin-left: -5000px;
-
+.services-wrapper {
     background-color: #f4f8f9;
 }
 
@@ -1866,7 +1863,7 @@ img {
 
 /* catalog */
 
-.container-expander--catalog {
+.catalog-description-wrapper {
     background-color: #f2f6f8;
 }
 
