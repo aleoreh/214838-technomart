@@ -1728,6 +1728,7 @@ img {
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: #ee3643;
+    text-decoration-skip-ink: none;
 
     color: #c4c1bb;
     background-color: rgba(255, 255, 255, 0);
@@ -1770,7 +1771,7 @@ img {
     height: 10px;
     padding: 0;
 
-    background-color: none;
+    background-color: rgba(255, 255, 255, 0);
     background-repeat: no-repeat;
     fill: #c5c5c5;
 
