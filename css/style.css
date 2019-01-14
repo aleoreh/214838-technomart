@@ -2144,6 +2144,8 @@ img {
     border: 1px solid #e5e5e5;
     border-radius: 3px;
     cursor: pointer;
+
+    box-sizing: border-box;
 }
 
 .catalog__pagination-item:hover {
