@@ -2053,6 +2053,8 @@ img {
 
     color: #ffffff;
     border: 3px solid;
+
+    box-sizing: border-box;
 }
 
 .goods-card__button:hover {
@@ -2094,8 +2096,6 @@ img {
 }
 
 .goods-card__button--bookmark {
-    padding-left: 12px;
-
     color: #32425c;
     border-color: #63a83c;
     background-color: #ffffff;
