@@ -1280,6 +1280,20 @@ img {
     height: 100%;
 }
 
+.popular-brands__item-link:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.popular-brands__item-link:active,
+.popular-brands__item-link:focus {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popular-brands__item-link:active img,
+.popular-brands__item-link:focus img {
+    opacity: 0.5;
+}
+
 .popular-brands__item:last-child,
 .popular-brands__item:nth-child(4n) {
     margin-right: 0;
@@ -2103,6 +2117,10 @@ img {
     padding-bottom: 14px;
 
     font-family: "PT Sans", Arial, sans-serif;
+}
+
+.goods-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .goods-card:hover .goods-card__image {
