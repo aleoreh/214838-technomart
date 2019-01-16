@@ -45,6 +45,24 @@ if (feedbackModal) {
     });
 }
 
+// map
+
+var contactsMapLink = document.querySelector('.contacts__map-link');
+var mapModal = document.querySelector('.modal-google-map');
+
+if (mapModal) {
+    var mapClose = mapModal.querySelector('.modal-google-map__close');
+
+    contactsMapLink.addEventListener('click', function(ev) {
+        ev.preventDefault();
+        mapModal.classList.add('modal-show');
+    });
+
+    mapClose.addEventListener('click', function(ev) {
+        ev.preventDefault();
+        mapModal.classList.remove('modal-show');
+    });
+}
 // slider
 
 var currentSlide = 2;
