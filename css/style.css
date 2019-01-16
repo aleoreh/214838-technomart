@@ -918,10 +918,12 @@ img {
 }
 
 .main-slider__slide--1 {
+    background-color: #695c53;
     background-image: url("../img/slider-1.jpg");
 }
 
 .main-slider__slide--2 {
+    background-color: #695c53;
     background-image: url("../img/slider-2.jpg");
 }
 
