@@ -1098,7 +1098,7 @@ img {
 }
 
 .popular-goods__link {
-    width: 253px;
+    min-width: 253px;
     min-height: 38px;
 
     line-height: 38px;
@@ -1166,7 +1166,7 @@ img {
 }
 
 .popular-goods__item:last-child,
-.popular-goods__item:nth-child(4) {
+.popular-goods__item:nth-child(4n) {
     margin-right: 0;
 }
 
@@ -1208,7 +1208,7 @@ img {
 }
 
 .popular-brands__link {
-    width: 253px;
+    min-width: 253px;
     min-height: 38px;
 
     line-height: 38px;
@@ -1281,7 +1281,7 @@ img {
 }
 
 .popular-brands__item:last-child,
-.popular-brands__item:nth-child(4) {
+.popular-brands__item:nth-child(4n) {
     margin-right: 0;
 }
 
@@ -1319,7 +1319,7 @@ img {
 }
 
 .services__list {
-    min-width: 240px;
+    width: 240px;
     margin: 0;
     padding: 0;
     padding-top: 49px;
@@ -1785,6 +1785,7 @@ img {
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
+    line-height: 35px;
 
     text-transform: uppercase;
 
@@ -1817,6 +1818,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
     width: 380px;
     margin: 0;
@@ -1866,7 +1869,10 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
+    max-width: 42px;
     margin: 0;
     padding: 0;
 
@@ -1877,6 +1883,7 @@ img {
     margin-right: 20px;
 }
 
+.main-sort__directions li:nth-child(2),
 .main-sort__directions li:last-child {
     margin-right: 0;
 }
