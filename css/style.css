@@ -2224,6 +2224,7 @@ img {
 .about__title {
     display: block;
 
+    margin: 0;
     margin-bottom: 22px;
 
     font-size: 30px;
