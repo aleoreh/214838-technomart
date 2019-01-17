@@ -804,35 +804,35 @@ img {
 
 .promo__card-item--horizontal-1 {
     background-color: #ffbf47;
-    background-image: url("../img/promo__card-item--horizontal-1.png");
+    background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;
     background-position: 213px 32px;
 }
 
 .promo__card-item--horizontal-2 {
     background-color: #3bbce3;
-    background-image: url("../img/promo__card-item--horizontal-2.png");
+    background-image: url("../img/icon-2.svg");
     background-repeat: no-repeat;
     background-position: 198px 32px;
 }
 
 .promo__card-item--horizontal-3 {
     background-color: #dc91d8;
-    background-image: url("../img/promo__card-item--horizontal-3.png");
+    background-image: url("../img/icon-3.svg");
     background-repeat: no-repeat;
     background-position: 191px 32px;
 }
 
 .promo__card-item--vertical-1 {
     background-color: #8ed78f;
-    background-image: url("../img/promo__card-item--vertical-1.png");
+    background-image: url("../img/icon-4.svg");
     background-repeat: no-repeat;
     background-position: 197px 27px;
 }
 
 .promo__card-item--vertical-2 {
     background-color: #ffc047;
-    background-image: url("../img/promo__card-item--vertical-2.png");
+    background-image: url("../img/icon-5.svg");
     background-repeat: no-repeat;
     background-position: 191px 32px;
 }
