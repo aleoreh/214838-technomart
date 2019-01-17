@@ -1078,10 +1078,10 @@ img {
     justify-content: space-between;
 
     margin-bottom: 20px;
-    padding-top: 25px;
+    padding-top: 23px;
     padding-right: 24px;
     padding-bottom: 25px;
-    padding-left: 30px;
+    padding-left: 28px;
 
     background-color: #f9f5f0;
 }
@@ -1600,7 +1600,7 @@ img {
 }
 
 .main-filter__section:last-of-type {
-    margin-bottom: 80px;
+    margin-bottom: 78px;
 }
 
 .main-filter__title {
@@ -2040,7 +2040,7 @@ img {
         flex-wrap: wrap;
 
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     padding: 0;
 
     list-style: none;
@@ -2375,7 +2375,7 @@ img {
     display: -ms-flexbox;
     display: flex;
 
-    padding-top: 77px;
+    padding-top: 75px;
 }
 
 .about {
@@ -2391,7 +2391,7 @@ img {
     display: block;
 
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 
     font-size: 30px;
     font-weight: normal;
@@ -2520,7 +2520,7 @@ img {
     display: block;
 
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 
     font-size: 30px;
     font-weight: normal;
