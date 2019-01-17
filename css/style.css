@@ -137,19 +137,15 @@ img {
     padding-right: 55px;
     padding-left: 55px;
 
-    text-align: center;
-
-    -webkit-box-shadow: 0 5px #b0202b;
-            box-shadow: 0 5px #b0202b;
-}
-
-.main-header__logo {
     font-size: 24px;
-
+    text-align: center;
     text-transform: uppercase;
 
     color: #ffffff;
     background-color: #ef3341;
+
+    -webkit-box-shadow: 0 5px #b0202b;
+            box-shadow: 0 5px #b0202b;
 }
 
 .main-header__logo:not(.main-header__logo--static):hover {
@@ -543,6 +539,14 @@ img {
     fill: #c5c5c5;
 }
 
+.main-header__account-action-text {
+    display: inline-block;
+
+    max-width: 200px;
+
+    vertical-align: middle;
+}
+
 .main-header__account-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -554,6 +558,7 @@ img {
     justify-content: flex-start;
 
     margin: 0;
+    max-width: 300px;
     padding: 0;
     padding-left: 16px;
 
