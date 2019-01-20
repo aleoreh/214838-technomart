@@ -2921,6 +2921,11 @@ img {
             animation: condense 0.4s;
 }
 
+.modal-error {
+    -webkit-animation: shake 0.05s;
+            animation: shake 0.05s;
+}
+
 
 /* modal-feedback */
 
@@ -3263,5 +3268,40 @@ img {
 
         -webkit-filter: blur(0);
                 filter: blur(0);
+    }
+}
+
+@-webkit-keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    25% {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+
+    75% {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+}
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    25% {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+
+    75% {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
     }
 }

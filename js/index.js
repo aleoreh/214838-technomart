@@ -31,11 +31,14 @@ if (feedbackModal) {
     feedbackClose.addEventListener('click', function(ev) {
         ev.preventDefault();
         feedbackModal.classList.remove('modal-show');
+        feedbackModal.classList.remove("modal-error");
     });
     feedbackForm.addEventListener('submit', function(ev) {
         if (!feedbackNameInput.value || !feedbackEmailInput.value || !feedbackTextarea.value) {
             ev.preventDefault();
-            console.log('Нужно ввести имя, email и текст сообщения');
+            feedbackForm.classList.remove("modal-error");
+            feedbackForm.offsetWidth = feedbackForm.offsetWidth;
+            feedbackForm.classList.add("modal-error");
         } else {
             if (hasStorageSupport) {
                 localStorage.setItem('name', feedbackNameInput.value);
@@ -203,6 +206,7 @@ window.addEventListener('keydown', function(ev) {
         ev.preventDefault();
         if (feedbackModal && feedbackModal.classList.contains('modal-show')) {
             feedbackModal.classList.remove('modal-show');
+            feedbackModal.classList.remove("modal-error");
         }
         if (mapModal && mapModal.classList.contains('modal-show')) {
             mapModal.classList.remove('modal-show');
